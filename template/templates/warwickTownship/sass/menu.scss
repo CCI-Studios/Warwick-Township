@@ -46,7 +46,8 @@
 		
 		li {
 			padding: 32px 15px 28px;
-			&:hover {
+			&:hover,
+			&.active {
 				background: url('../images/menu_rollover.png') top center no-repeat;
 			}
 			
