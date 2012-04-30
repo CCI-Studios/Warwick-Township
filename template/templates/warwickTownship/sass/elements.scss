@@ -10,6 +10,12 @@ body, select, input, textarea {
 /* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
 h1, h2, h3, h4, h5, h6 { font-weight: bold; }
 
+.module h3,
+.moduletable h3 {
+	font-size: 22px;
+	text-transform: uppercase;
+}
+
 a, a:active, a:visited {
 	color: #607890;
 	text-decoration: none;
