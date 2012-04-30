@@ -31,23 +31,23 @@
 	margin: 0 0 1em 0;
 }
 
-#col1 {
-	float: left;
-	width: 370px;
-	padding: 0 40px 0 0;
+#columns {
+	margin-left: 160px;
+	
+	#col1 {
+		float: left;
+		width: 370px;
+		padding: 0 40px 0 0;
+	}
 
-	margin: 0 0 0 160px;
-}
-
-#col2 {
-	float: left;
-	width: 370px;
-
+	#col2 {
+		float: left;
+		width: 370px;
+	}
 }
 
 #bottom {
 	margin: 0 0 0 160px;
-	float: left;
 	width: 780px;
 }
 
