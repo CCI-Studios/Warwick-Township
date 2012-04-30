@@ -40,6 +40,17 @@
         position: absolute;
         top: -85px; }
 
+.moduletable_hmenu.secondary {
+  font-size: 10px;
+  line-height: 10px;
+  text-align: center;
+  padding: 20px 0; }
+  .moduletable_hmenu.secondary ul li {
+    padding: 0 10px;
+    border-left: 1px solid #000; }
+    .moduletable_hmenu.secondary ul li:first-child {
+      border: none; }
+
 .moduletable_hmenu > ul > li > a,
 .moduletable_hmenu > ul > li > span {
   display: block; }

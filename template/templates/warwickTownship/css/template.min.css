@@ -378,7 +378,11 @@ h1, h2, h3, h4, h5, h6 {
 .module h3,
 .moduletable h3 {
   font-size: 22px;
-  text-transform: uppercase; }
+  line-height: 22px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ebebeb;
+  padding: 0 0 10px 0;
+  margin: 0; }
 
 a, a:active, a:visited {
   color: #000;
@@ -438,6 +442,41 @@ button {
   height: 453px;
   position: relative; }
 
+#body {
+  margin: 2em auto 0; }
+
+#sidebarLeft {
+  float: left;
+  width: 150px;
+  padding: 0 10px 0 0; }
+
+#top {
+  float: left;
+  width: 780px;
+  margin: 0 0 1em 0; }
+
+#col1 {
+  float: left;
+  width: 370px;
+  padding: 0 40px 0 0;
+  margin: 0 0 0 160px; }
+
+#col2 {
+  float: left;
+  width: 370px; }
+
+#bottom {
+  margin: 0 0 0 160px;
+  float: left;
+  width: 780px; }
+
+#footer {
+  width: 100%;
+  border-top: 3px solid #0b7419; }
+  #footer > div {
+    border-top: 2px solid #f6f6f6;
+    background-color: #eaeaea; }
+
 /* @group modules */
 .module.masthead {
   position: absolute;
@@ -447,13 +486,15 @@ button {
   bottom: -9px; }
   .module.masthead > div {
     background: url("../images/bg_masthead.png") bottom center repeat-x;
-    padding: 16px 0 7px; }
+    padding: 16px 0 1px; }
   .module.masthead > div > div {
     width: 940px;
     padding: 0 10px;
     margin: 0 auto; }
   .module.masthead h3 {
-    margin: 0; }
+    font-size: 35px;
+    margin: 0;
+    border: none; }
 
 /* @group hmenu */
 .module_hmenu .menu,
@@ -496,6 +537,17 @@ button {
       .module_hmenu.primary .menu li:first-child img {
         position: absolute;
         top: -85px; }
+
+.moduletable_hmenu.secondary {
+  font-size: 10px;
+  line-height: 10px;
+  text-align: center;
+  padding: 20px 0; }
+  .moduletable_hmenu.secondary ul li {
+    padding: 0 10px;
+    border-left: 1px solid #000; }
+    .moduletable_hmenu.secondary ul li:first-child {
+      border: none; }
 
 .moduletable_hmenu > ul > li > a,
 .moduletable_hmenu > ul > li > span {

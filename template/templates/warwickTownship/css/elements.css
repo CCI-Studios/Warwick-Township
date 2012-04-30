@@ -12,7 +12,11 @@ h1, h2, h3, h4, h5, h6 {
 .module h3,
 .moduletable h3 {
   font-size: 22px;
-  text-transform: uppercase; }
+  line-height: 22px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ebebeb;
+  padding: 0 0 10px 0;
+  margin: 0; }
 
 a, a:active, a:visited {
   color: #000;
