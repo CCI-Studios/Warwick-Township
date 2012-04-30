@@ -4,6 +4,35 @@
 /* @group modules */
 .moduletable {}
 
+// header
+
+.module.search {
+	position: absolute;
+	width: 100%;
+	margin-top: 10px;
+	z-index: 2;
+	
+	> div {
+		position: relative;
+		width: 940px;
+		padding: 0 10px;
+		margin: 0 auto;
+	}
+	
+	input {
+		position: absolute;
+		right: 0;
+		top: 0;
+		height: 25px;
+		line-height: 25px;
+		padding: 0 0 0 10px;
+		border: 1px solid #000;
+		border-radius: 15px;
+		font-size: 10px;
+		color: $inputText;
+	}
+}
+
 // masthead 
 
 .module.masthead {
