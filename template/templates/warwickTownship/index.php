@@ -62,7 +62,8 @@ $typekit = null;
 		</div>
 		
 		<div id="masthead">
-			<jdoc:include type="modules" name="masthead" style="xhtml" />
+			<jdoc:include type="modules" name="masthead" style="rounded" />
+			<div class="clear"></div>
 		</div>
 		
 		<div id="body" class="container">
