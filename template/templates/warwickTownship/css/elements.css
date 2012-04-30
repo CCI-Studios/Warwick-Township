@@ -2,16 +2,22 @@
 body, select, input, textarea {
   color: #444;
   /* off black */
-  font-family: Helvetica, Arial, sans-serif; }
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px; }
 
 /* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold; }
 
+.module h3,
+.moduletable h3 {
+  font-size: 22px;
+  text-transform: uppercase; }
+
 a, a:active, a:visited {
-  color: #607890;
+  color: #000;
   text-decoration: none; }
 
 a:hover {
-  color: #036;
+  color: #000;
   text-decoration: underline; }

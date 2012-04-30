@@ -1,1 +1,8 @@
 /* layout */
+.container {
+  width: 940px;
+  padding: 0 10px;
+  margin: 0 auto; }
+
+#masthead {
+  background: url("../images/bg_masthead1.jpg") top center no-repeat; }
