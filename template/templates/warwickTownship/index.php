@@ -57,23 +57,42 @@ $typekit = null;
 <body class="<?= $menu ?>">
 
 	<div id="wrapper">
-		<header>
-			<jdoc:include type="modules" name ="header" style="xhtml" />
-		</header>
-
-		<div id="main">
-			<aside>
-				<jdoc:include type="modules" name="left" style="xhtml" />
-			</aside>
-
-			<article>
-				<jdoc:include type="component" />
-			</article>
+		<div id="header">
+			<jdoc:include type="modules" name="header" style="rounded" />
 		</div>
-
-		<footer>
+		
+		<div id="masthead">
+			<jdoc:include type="modules" name="masthead" style="xhtml" />
+		</div>
+		
+		<div id="body" class="container">
+			<div id="sidebarLeft">
+				<jdoc:include type="modules" name="sidebarLeft" style="xhtml" />
+			</div>
+			<div id="top">
+				<jdoc:include type="modules" name="top" style="xhtml" />
+			</div>
+			<div id="comp">
+				<jdoc:include type="modules" name="comp" style="xhtml" />
+			</div>
+			<div id="col1">
+				<jdoc:include type="modules" name="col1" style="xhtml" />
+			</div>
+			<div id="col2">
+				<jdoc:include type="modules" name="col2" style="xhtml" />
+			</div>
+			<div id="bottom">
+				<jdoc:include type="modules" name="bottom" style="xhtml" />
+			</div>
+			<div id="sidebarRight">
+				<jdoc:include type="modules" name="bottom" style="xhtml" />
+			</div>
+		</div>
+		
+		<div id="footer" class="container">
 			<jdoc:include type="modules" name="footer" style="xhtml" />
-		</footer>
+		</div>
+		
 	</div>
 
 	<div class="hidden">
