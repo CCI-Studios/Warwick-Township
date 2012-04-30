@@ -70,9 +70,12 @@ $typekit = null;
 			<div id="sidebarLeft">
 				<jdoc:include type="modules" name="sidebarLeft" style="xhtml" />
 			</div>
+			<?php if ($this->countModules('top')): ?>
 			<div id="top">
 				<jdoc:include type="modules" name="top" style="xhtml" />
 			</div>
+			<div class="clear"></div>
+			<?php endif; ?>
 			<div id="comp">
 				<jdoc:include type="modules" name="comp" style="xhtml" />
 			</div>
@@ -82,12 +85,17 @@ $typekit = null;
 			<div id="col2">
 				<jdoc:include type="modules" name="col2" style="xhtml" />
 			</div>
+			<?php if ($this->countModules('bottom')): ?>
 			<div id="bottom">
 				<jdoc:include type="modules" name="bottom" style="xhtml" />
 			</div>
+			<?php endif; ?>
+			<?php if ($this->countModules('sidebarRight')): ?>
 			<div id="sidebarRight">
-				<jdoc:include type="modules" name="bottom" style="xhtml" />
+				<jdoc:include type="modules" name="sidebarRight" style="xhtml" />
 			</div>
+			<?php endif; ?>
+			<div class="clear"></div>
 		</div>
 		
 		<div id="footer"><div><div class="container">
