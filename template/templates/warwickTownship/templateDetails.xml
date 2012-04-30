@@ -35,5 +35,6 @@
 		<position>bottom</position>
 		<position>sidebar2</position>
 		<position>footer</position>
+		<position>copyright</position>
 	</positions>
 </extension>
