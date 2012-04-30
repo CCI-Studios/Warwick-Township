@@ -434,9 +434,27 @@ button {
   margin: 0 auto; }
 
 #masthead {
-  background: url("../images/bg_masthead1.jpg") top center no-repeat; }
+  background: url("../images/bg_masthead1.jpg") top center no-repeat;
+  height: 453px;
+  position: relative; }
 
 /* @group modules */
+.module.masthead {
+  position: absolute;
+  width: 100%;
+  background: url("../images/bg_mastheadShadow.png") bottom center no-repeat;
+  padding-bottom: 9px;
+  bottom: -9px; }
+  .module.masthead > div {
+    background: url("../images/bg_masthead.png") bottom center repeat-x;
+    padding: 16px 0 7px; }
+  .module.masthead > div > div {
+    width: 940px;
+    padding: 0 10px;
+    margin: 0 auto; }
+  .module.masthead h3 {
+    margin: 0; }
+
 /* @group hmenu */
 .module_hmenu .menu,
 .moduletable_hmenu > ul {
@@ -457,15 +475,18 @@ button {
   font-weight: bold;
   width: 100%;
   top: 50px;
+  border-top: 3px solid black;
   background: url("../images/bg_menuShadow.png") bottom center no-repeat;
   padding: 0 0 10px 0;
-  border-top: 3px solid black; }
+  z-index: 2; }
   .module_hmenu.primary > div {
+    background-color: white; }
+  .module_hmenu.primary > div > div {
     position: relative;
     width: 940px;
     margin: 0 auto; }
   .module_hmenu.primary .menu li {
-    padding: 33px 15px 35px; }
+    padding: 32px 15px 28px; }
     .module_hmenu.primary .menu li:hover {
       background: url("../images/menu_rollover.png") top center no-repeat; }
     .module_hmenu.primary .menu li:first-child {

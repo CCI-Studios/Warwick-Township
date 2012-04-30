@@ -1,1 +1,16 @@
 /* @group modules */
+.module.masthead {
+  position: absolute;
+  width: 100%;
+  background: url("../images/bg_mastheadShadow.png") bottom center no-repeat;
+  padding-bottom: 9px;
+  bottom: -9px; }
+  .module.masthead > div {
+    background: url("../images/bg_masthead.png") bottom center repeat-x;
+    padding: 16px 0 7px; }
+  .module.masthead > div > div {
+    width: 940px;
+    padding: 0 10px;
+    margin: 0 auto; }
+  .module.masthead h3 {
+    margin: 0; }

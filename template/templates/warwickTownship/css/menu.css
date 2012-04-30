@@ -18,15 +18,18 @@
   font-weight: bold;
   width: 100%;
   top: 50px;
+  border-top: 3px solid black;
   background: url("../images/bg_menuShadow.png") bottom center no-repeat;
   padding: 0 0 10px 0;
-  border-top: 3px solid black; }
+  z-index: 2; }
   .module_hmenu.primary > div {
+    background-color: white; }
+  .module_hmenu.primary > div > div {
     position: relative;
     width: 940px;
     margin: 0 auto; }
   .module_hmenu.primary .menu li {
-    padding: 33px 15px 35px; }
+    padding: 32px 15px 28px; }
     .module_hmenu.primary .menu li:hover {
       background: url("../images/menu_rollover.png") top center no-repeat; }
     .module_hmenu.primary .menu li:first-child {
