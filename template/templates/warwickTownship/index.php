@@ -92,6 +92,8 @@ $typekit = null;
 		
 		<div id="footer" class="container">
 			<jdoc:include type="modules" name="footer" style="xhtml" />
+		<div id="copyright">
+			<jdoc:include type="modules" name="copyright" style="xhtml" />
 		</div>
 		
 	</div>
