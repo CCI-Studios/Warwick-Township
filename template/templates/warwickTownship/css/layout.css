@@ -10,7 +10,7 @@
   position: relative; }
 
 #body {
-  margin: 2em auto 0; }
+  margin: 2em auto; }
 
 #sidebarLeft {
   float: left;
@@ -22,19 +22,18 @@
   width: 780px;
   margin: 0 0 1em 0; }
 
-#col1 {
-  float: left;
-  width: 370px;
-  padding: 0 40px 0 0;
-  margin: 0 0 0 160px; }
-
-#col2 {
-  float: left;
-  width: 370px; }
+#columns {
+  margin-left: 160px; }
+  #columns #col1 {
+    float: left;
+    width: 370px;
+    padding: 0 40px 0 0; }
+  #columns #col2 {
+    float: left;
+    width: 370px; }
 
 #bottom {
   margin: 0 0 0 160px;
-  float: left;
   width: 780px; }
 
 #footer {
@@ -43,3 +42,7 @@
   #footer > div {
     border-top: 2px solid #f6f6f6;
     background-color: #eaeaea; }
+
+#copyright {
+  font-size: 10px;
+  text-align: center; }

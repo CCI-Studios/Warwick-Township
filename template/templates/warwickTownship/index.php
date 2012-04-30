@@ -74,16 +74,17 @@ $typekit = null;
 			<div id="top">
 				<jdoc:include type="modules" name="top" style="xhtml" />
 			</div>
-			<div class="clear"></div>
 			<?php endif; ?>
 			<div id="comp">
 				<jdoc:include type="modules" name="comp" style="xhtml" />
 			</div>
-			<div id="col1">
-				<jdoc:include type="modules" name="col1" style="xhtml" />
-			</div>
-			<div id="col2">
-				<jdoc:include type="modules" name="col2" style="xhtml" />
+			<div id="columns">
+				<div id="col1">
+					<jdoc:include type="modules" name="col1" style="xhtml" />
+				</div>
+				<div id="col2">
+					<jdoc:include type="modules" name="col2" style="xhtml" />
+				</div>
 			</div>
 			<?php if ($this->countModules('bottom')): ?>
 			<div id="bottom">

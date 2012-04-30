@@ -373,7 +373,8 @@ body, select, input, textarea {
 
 /* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: bold; }
+  font-family: "Helvetica CY";
+  font-weight: normal; }
 
 .module h3,
 .moduletable h3 {
@@ -381,7 +382,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 22px;
   text-transform: uppercase;
   border-bottom: 1px solid #ebebeb;
-  padding: 0 0 10px 0;
+  padding: 0 0 5px 0;
   margin: 0; }
 
 a, a:active, a:visited {
@@ -443,7 +444,7 @@ button {
   position: relative; }
 
 #body {
-  margin: 2em auto 0; }
+  margin: 2em auto; }
 
 #sidebarLeft {
   float: left;
@@ -455,19 +456,18 @@ button {
   width: 780px;
   margin: 0 0 1em 0; }
 
-#col1 {
-  float: left;
-  width: 370px;
-  padding: 0 40px 0 0;
-  margin: 0 0 0 160px; }
-
-#col2 {
-  float: left;
-  width: 370px; }
+#columns {
+  margin-left: 160px; }
+  #columns #col1 {
+    float: left;
+    width: 370px;
+    padding: 0 40px 0 0; }
+  #columns #col2 {
+    float: left;
+    width: 370px; }
 
 #bottom {
   margin: 0 0 0 160px;
-  float: left;
   width: 780px; }
 
 #footer {
@@ -476,6 +476,10 @@ button {
   #footer > div {
     border-top: 2px solid #f6f6f6;
     background-color: #eaeaea; }
+
+#copyright {
+  font-size: 10px;
+  text-align: center; }
 
 /* @group modules */
 .module.masthead {
