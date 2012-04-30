@@ -90,8 +90,10 @@ $typekit = null;
 			</div>
 		</div>
 		
-		<div id="footer" class="container">
+		<div id="footer"><div><div class="container">
 			<jdoc:include type="modules" name="footer" style="xhtml" />
+		</div></div></div>
+		
 		<div id="copyright">
 			<jdoc:include type="modules" name="copyright" style="xhtml" />
 		</div>
