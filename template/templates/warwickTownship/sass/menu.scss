@@ -61,7 +61,23 @@
 			}
 		}
 	}
+}
 
+.moduletable_hmenu.secondary {
+	font-size: 10px;
+	line-height: 10px;
+	text-align: center;
+	padding: 20px 0;
+	
+	ul {
+		li {
+			padding: 0 10px;
+			border-left: 1px solid #000;
+			&:first-child {
+				border: none;
+			}
+		}
+	}
 }
 
 .moduletable_hmenu > ul > li > a,
