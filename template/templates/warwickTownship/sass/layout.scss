@@ -14,3 +14,50 @@
 	height: 453px;
 	position: relative;
 }
+
+#body {
+	margin: 2em auto 0;
+}
+
+#sidebarLeft {
+	float: left;
+	width: 150px;
+	padding: 0 10px 0 0;
+}
+
+#top {
+	float: left;
+	width: 780px;
+	margin: 0 0 1em 0;
+}
+
+#col1 {
+	float: left;
+	width: 370px;
+	padding: 0 40px 0 0;
+
+	margin: 0 0 0 160px;
+}
+
+#col2 {
+	float: left;
+	width: 370px;
+
+}
+
+#bottom {
+	margin: 0 0 0 160px;
+	float: left;
+	width: 780px;
+}
+
+#footer {
+	width: 100%;
+	border-top: 3px solid $green;
+	
+	> div {
+		border-top: 2px solid #f6f6f6;
+		background-color: #eaeaea;
+	}
+	
+}
