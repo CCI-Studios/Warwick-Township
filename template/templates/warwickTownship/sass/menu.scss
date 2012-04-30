@@ -32,6 +32,10 @@
 	border-top: 3px solid black;
 	
 	> div {
+		background-color: white;
+	}
+	
+	> div > div {
 		position: relative;
 		width: 940px;
 		margin: 0 auto;
