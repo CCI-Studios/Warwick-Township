@@ -61,10 +61,7 @@ $typekit = null;
 			<jdoc:include type="modules" name="header" style="rounded" />
 		</div>
 		
-		<div id="masthead">
-			<jdoc:include type="modules" name="masthead" style="rounded" />
-			<div class="clear"></div>
-		</div>
+		<div class="clear"></div>
 		
 		<div id="body" class="container">
 			<div id="sidebarLeft">
