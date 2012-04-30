@@ -72,4 +72,9 @@
   margin: 0.5em 0 1em 1em;
   list-style: none; }
 
+.moduletable_vmenu.home {
+  font-family: "Helvetica CY";
+  font-size: 12px;
+  text-align: center; }
+
 /* /vmenu */
