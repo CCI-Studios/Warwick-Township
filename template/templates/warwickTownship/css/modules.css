@@ -1,8 +1,8 @@
 /* @group modules */
 .module.search {
   position: absolute;
+  top: 10px;
   width: 100%;
-  margin-top: 10px;
   z-index: 2; }
   .module.search > div {
     position: relative;
@@ -21,20 +21,41 @@
     font-size: 10px;
     color: gray; }
 
-.module.masthead {
-  position: absolute;
-  width: 100%;
-  background: url("../images/bg_mastheadShadow.png") bottom center no-repeat;
-  padding-bottom: 9px;
-  bottom: -9px; }
-  .module.masthead > div {
+.module.banner {
+  background: url("../images/bg_masthead1.jpg") top center no-repeat;
+  height: 453px; }
+  .module.banner > div {
+    position: absolute;
+    width: 100%;
+    background: url("../images/bg_mastheadShadow.png") bottom center no-repeat;
+    padding-bottom: 9px;
+    bottom: -9px; }
+  .module.banner > div > div {
     background: url("../images/bg_masthead.png") bottom center repeat-x;
     padding: 16px 0 1px; }
-  .module.masthead > div > div {
+  .module.banner > div > div > div {
     width: 940px;
     padding: 0 10px;
     margin: 0 auto; }
-  .module.masthead h3 {
+  .module.banner h3 {
     font-size: 35px;
     margin: 0;
     border: none; }
+
+ul.category-module {
+  padding: 0;
+  margin: 0; }
+  ul.category-module li {
+    list-style: none;
+    border-top: 1px solid #ebebeb;
+    background: url("../images/events_listImg.png") left 1em no-repeat;
+    padding: 0 0 1em 50px; }
+    ul.category-module li:first-child {
+      border: none;
+      padding-top: 0; }
+    ul.category-module li h4 {
+      font-weight: bold;
+      margin: 0;
+      padding: 1em 0 0 0; }
+    ul.category-module li p {
+      margin: 0; }

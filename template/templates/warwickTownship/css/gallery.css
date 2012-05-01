@@ -1,0 +1,15 @@
+.moduletable.gallery {
+  width: 100%;
+  overflow: scroll; }
+  .moduletable.gallery ul.sigProContainer {
+    width: 2000px; }
+    .moduletable.gallery ul.sigProContainer li.sigProThumb {
+      margin: 5px 20px; }
+      .moduletable.gallery ul.sigProContainer li.sigProThumb span.sigProLinkOuterWrapper {
+        padding: 0; }
+        .moduletable.gallery ul.sigProContainer li.sigProThumb span.sigProLinkOuterWrapper span.sigProLinkWrapper {
+          border: none !important;
+          padding: 0 !important;
+          box-shadow: 0px 12px 12px -12px #898887; }
+          .moduletable.gallery ul.sigProContainer li.sigProThumb span.sigProLinkOuterWrapper span.sigProLinkWrapper img {
+            border-radius: 10px; }

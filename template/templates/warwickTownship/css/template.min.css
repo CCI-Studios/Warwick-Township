@@ -378,7 +378,6 @@ h1, h2, h3, h4, h5, h6 {
 .module h3,
 .moduletable h3 {
   font-size: 22px;
-  line-height: 22px;
   text-transform: uppercase;
   border-bottom: 1px solid #ebebeb;
   padding: 0 0 5px 0;
@@ -438,8 +437,6 @@ button {
   margin: 0 auto; }
 
 #header {
-  background: url("../images/bg_masthead1.jpg") top center no-repeat;
-  height: 453px;
   position: relative; }
 
 #body {
@@ -453,10 +450,10 @@ button {
 #top {
   float: left;
   width: 780px;
-  margin: 0 0 1em 0; }
+  margin: 0 0 2em 0; }
 
 #columns {
-  margin-left: 160px; }
+  float: left; }
   #columns #col1 {
     float: left;
     width: 370px;
@@ -466,8 +463,9 @@ button {
     width: 370px; }
 
 #bottom {
-  margin: 0 0 0 160px;
-  width: 780px; }
+  float: left;
+  width: 780px;
+  margin: 2em 0 0 0; }
 
 #footer {
   width: 100%;
@@ -478,13 +476,14 @@ button {
 
 #copyright {
   font-size: 10px;
-  text-align: center; }
+  text-align: center;
+  line-height: 1.5em; }
 
 /* @group modules */
 .module.search {
   position: absolute;
+  top: 10px;
   width: 100%;
-  margin-top: 10px;
   z-index: 2; }
   .module.search > div {
     position: relative;
@@ -503,23 +502,44 @@ button {
     font-size: 10px;
     color: gray; }
 
-.module.masthead {
-  position: absolute;
-  width: 100%;
-  background: url("../images/bg_mastheadShadow.png") bottom center no-repeat;
-  padding-bottom: 9px;
-  bottom: -9px; }
-  .module.masthead > div {
+.module.banner {
+  background: url("../images/bg_masthead1.jpg") top center no-repeat;
+  height: 453px; }
+  .module.banner > div {
+    position: absolute;
+    width: 100%;
+    background: url("../images/bg_mastheadShadow.png") bottom center no-repeat;
+    padding-bottom: 9px;
+    bottom: -9px; }
+  .module.banner > div > div {
     background: url("../images/bg_masthead.png") bottom center repeat-x;
     padding: 16px 0 1px; }
-  .module.masthead > div > div {
+  .module.banner > div > div > div {
     width: 940px;
     padding: 0 10px;
     margin: 0 auto; }
-  .module.masthead h3 {
+  .module.banner h3 {
     font-size: 35px;
     margin: 0;
     border: none; }
+
+ul.category-module {
+  padding: 0;
+  margin: 0; }
+  ul.category-module li {
+    list-style: none;
+    border-top: 1px solid #ebebeb;
+    background: url("../images/events_listImg.png") left 1em no-repeat;
+    padding: 0 0 1em 50px; }
+    ul.category-module li:first-child {
+      border: none;
+      padding-top: 0; }
+    ul.category-module li h4 {
+      font-weight: bold;
+      margin: 0;
+      padding: 1em 0 0 0; }
+    ul.category-module li p {
+      margin: 0; }
 
 /* @group hmenu */
 .module_hmenu .menu,
@@ -541,12 +561,13 @@ button {
   font-weight: bold;
   width: 100%;
   top: 50px;
-  border-top: 3px solid black;
+  border-top: 1px solid #fff;
   background: url("../images/bg_menuShadow.png") bottom center no-repeat;
   padding: 0 0 10px 0;
   z-index: 2; }
   .module_hmenu.primary > div {
-    background-color: white; }
+    background-color: white;
+    border-top: 3px solid black; }
   .module_hmenu.primary > div > div {
     position: relative;
     width: 940px;
@@ -607,6 +628,22 @@ button {
     padding: 0 15px; }
 
 /* /vmenu */
+.moduletable.gallery {
+  width: 100%;
+  overflow: scroll; }
+  .moduletable.gallery ul.sigProContainer {
+    width: 2000px; }
+    .moduletable.gallery ul.sigProContainer li.sigProThumb {
+      margin: 5px 20px; }
+      .moduletable.gallery ul.sigProContainer li.sigProThumb span.sigProLinkOuterWrapper {
+        padding: 0; }
+        .moduletable.gallery ul.sigProContainer li.sigProThumb span.sigProLinkOuterWrapper span.sigProLinkWrapper {
+          border: none !important;
+          padding: 0 !important;
+          box-shadow: 0px 12px 12px -12px #898887; }
+          .moduletable.gallery ul.sigProContainer li.sigProThumb span.sigProLinkOuterWrapper span.sigProLinkWrapper img {
+            border-radius: 10px; }
+
 /* styles */
 .clr, .clear {
   clear: both; }

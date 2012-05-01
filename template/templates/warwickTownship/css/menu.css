@@ -18,12 +18,13 @@
   font-weight: bold;
   width: 100%;
   top: 50px;
-  border-top: 3px solid black;
+  border-top: 1px solid #fff;
   background: url("../images/bg_menuShadow.png") bottom center no-repeat;
   padding: 0 0 10px 0;
   z-index: 2; }
   .module_hmenu.primary > div {
-    background-color: white; }
+    background-color: white;
+    border-top: 3px solid black; }
   .module_hmenu.primary > div > div {
     position: relative;
     width: 940px;
