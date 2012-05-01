@@ -22,15 +22,14 @@
 }
 
 .module_hmenu.primary {
-	position: absolute;
+	position: relative;
 	font-size: 13px;
 	font-weight: bold;
 	width: 100%;
-	top: 50px;
 	border-top: 1px solid #fff;
 	background: url('../images/bg_menuShadow.png') bottom center no-repeat;
 	padding: 0 0 10px 0;
-	z-index: 2;
+	z-index: 3;
 	
 	> div {
 		background-color: white;
