@@ -33,21 +33,25 @@
 	}
 }
 
-// masthead 
-
-.module.masthead {
-	position: absolute;
-	width: 100%;
-	background: url('../images/bg_mastheadShadow.png') bottom center no-repeat;
-	padding-bottom: 9px;
-	bottom: -9px;
+// banner 
+.module.banner {
+	background: url('../images/bg_masthead1.jpg') top center no-repeat;
+	height: 453px;
 	
 	> div {
+		position: absolute;
+		width: 100%;
+		background: url('../images/bg_mastheadShadow.png') bottom center no-repeat;
+		padding-bottom: 9px;
+		bottom: -9px;
+	}
+	
+	> div > div {
 		background: url('../images/bg_masthead.png') bottom center repeat-x;
 		padding: 16px 0 1px;
 	}
 	
-	> div > div {
+	> div > div > div {
 		width: 940px;
 		padding: 0 10px;
 		margin: 0 auto;
