@@ -29,7 +29,8 @@
     padding: 0 40px 0 0; }
   #columns #col2 {
     float: left;
-    width: 370px; }
+    width: 370px;
+    background: url("../images/watermark_w.png") center 30px no-repeat; }
 
 #bottom {
   float: left;
