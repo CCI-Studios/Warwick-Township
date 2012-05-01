@@ -21,26 +21,49 @@
     font-size: 10px;
     color: gray; }
 
-.module.banner {
+.module.slideshow {
   background: url("../images/bg_masthead1.jpg") top center no-repeat;
-  height: 453px; }
-  .module.banner > div {
+  height: 453px;
+  margin: -139px 0 0 0; }
+  .module.slideshow > div {
     position: absolute;
     width: 100%;
     background: url("../images/bg_mastheadShadow.png") bottom center no-repeat;
     padding-bottom: 9px;
     bottom: -9px; }
-  .module.banner > div > div {
+  .module.slideshow > div > div {
     background: url("../images/bg_masthead.png") bottom center repeat-x;
     padding: 16px 0 1px; }
-  .module.banner > div > div > div {
+  .module.slideshow > div > div > div {
     width: 940px;
     padding: 0 10px;
     margin: 0 auto; }
-  .module.banner h3 {
+  .module.slideshow h3 {
     font-size: 35px;
     margin: 0;
     border: none; }
+
+.module.masthead {
+  z-index: 1; }
+  .module.masthead > div {
+    margin: -10px 0 0 0;
+    width: 100%;
+    background: url("../images/business_bg.jpg") top center repeat-x; }
+  .module.masthead > div > div {
+    width: 940px;
+    padding: 0 10px;
+    margin: 0 auto;
+    height: 123px; }
+  .module.masthead > div > div > div {
+    background: url("../images/business_leftImg.png") bottom left no-repeat;
+    height: 123px; }
+    .module.masthead > div > div > div h1 {
+      font-size: 22px;
+      color: #FFF;
+      position: absolute;
+      bottom: 10px;
+      padding: 0 0 0 180px;
+      text-shadow: 2px 2px 2px #2e2e2e; }
 
 ul.category-module {
   padding: 0;
