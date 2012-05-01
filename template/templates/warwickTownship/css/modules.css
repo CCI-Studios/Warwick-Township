@@ -47,22 +47,22 @@
   z-index: 1;
   margin: -10px 0 0 0;
   width: 100%;
-  background: url("../images/business_bg.jpg") top center repeat-x; }
+  background: url("../images/business_bg.jpg") center top repeat-x; }
   .module.masthead > div {
     width: 940px;
     padding: 0 10px;
     margin: 0 auto;
     height: 123px; }
   .module.masthead > div > div {
-    background: url("../images/business_rightImg.png") bottom right no-repeat; }
+    background: url("../images/business_rightImg.png") right bottom no-repeat; }
   .module.masthead > div > div > div {
-    background: url("../images/business_leftImg.png") bottom left no-repeat;
+    background: url("../images/business_leftImg.png") 45px bottom no-repeat;
     height: 123px; }
     .module.masthead > div > div > div h1 {
       font-size: 22px;
       text-transform: uppercase;
       color: #FFF;
-      padding: 80px 0 0 180px;
+      padding: 80px 0 0 160px;
       margin: 0;
       text-shadow: 2px 2px 2px #2e2e2e; }
 
