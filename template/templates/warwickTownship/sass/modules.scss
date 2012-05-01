@@ -70,7 +70,7 @@
 	z-index: 1;
 	margin: -10px 0 0 0;
 	width: 100%;
-	background: url('../images/business_bg.jpg') top center repeat-x;
+	background: url('../images/business_bg.jpg') center top repeat-x;
 	
 	> div {
 		width: 940px;
@@ -80,11 +80,11 @@
 	}
 	
 	> div > div {
-		background: url('../images/business_rightImg.png') bottom right no-repeat;
+		background: url('../images/business_rightImg.png') right bottom no-repeat;
 	}
 	
 	> div > div > div {
-		background: url('../images/business_leftImg.png') bottom left no-repeat;
+		background: url('../images/business_leftImg.png') 45px bottom no-repeat;
 		height: 123px;
 		
 		h1 {
