@@ -6,6 +6,12 @@
 
 // header
 
+.module.socialLink > div > div {
+	position: absolute;
+	right: 185px;
+}
+
+.module.socialLink,
 .module.search {
 	position: absolute;
 	top: 10px;
