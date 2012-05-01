@@ -13,13 +13,18 @@
 
 #sidebarLeft {
   float: left;
-  width: 150px;
+  width: 140px;
   padding: 0 10px 0 0; }
 
 #top {
   float: left;
   width: 780px;
   margin: 0 0 2em 0; }
+
+#comp {
+  float: left;
+  width: 770px;
+  padding: 0 0 0 20px; }
 
 #columns {
   float: left; }

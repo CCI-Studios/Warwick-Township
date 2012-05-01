@@ -445,13 +445,18 @@ button {
 
 #sidebarLeft {
   float: left;
-  width: 150px;
+  width: 140px;
   padding: 0 10px 0 0; }
 
 #top {
   float: left;
   width: 780px;
   margin: 0 0 2em 0; }
+
+#comp {
+  float: left;
+  width: 770px;
+  padding: 0 0 0 20px; }
 
 #columns {
   float: left; }
@@ -482,16 +487,23 @@ button {
   line-height: 1.5em; }
 
 /* @group modules */
+.module.socialLink > div > div {
+  position: absolute;
+  right: 185px; }
+
+.module.socialLink,
 .module.search {
   position: absolute;
   top: 10px;
   width: 100%;
   z-index: 2; }
+  .module.socialLink > div,
   .module.search > div {
     position: relative;
     width: 940px;
     padding: 0 10px;
     margin: 0 auto; }
+  .module.socialLink input,
   .module.search input {
     position: absolute;
     right: 0;
@@ -539,13 +551,13 @@ button {
   .module.masthead > div > div {
     background: url("../images/business_rightImg.png") right bottom no-repeat; }
   .module.masthead > div > div > div {
-    background: url("../images/business_leftImg.png") 45px bottom no-repeat;
+    background: url("../images/business_leftImg.png") 55px bottom no-repeat;
     height: 123px; }
     .module.masthead > div > div > div h1 {
       font-size: 22px;
       text-transform: uppercase;
       color: #FFF;
-      padding: 80px 0 0 160px;
+      padding: 80px 0 0 170px;
       margin: 0;
       text-shadow: 2px 2px 2px #2e2e2e; }
 
@@ -603,12 +615,12 @@ ul.category-module {
       background: url("../images/menu_rollover.png") top center no-repeat; }
     .module_hmenu.primary .menu li:first-child {
       position: relative;
-      width: 145px;
+      width: 160px;
       padding: 0; }
       .module_hmenu.primary .menu li:first-child img {
         position: absolute;
         top: -85px;
-        left: -10px; }
+        left: -3px; }
 
 .moduletable_hmenu.secondary {
   font-size: 10px;
@@ -658,7 +670,6 @@ ul.category-module {
   font-weight: bold; }
   .moduletable_vmenu.inner li {
     line-height: 27px;
-    margin: 0 0 0 -10px;
     padding: 0 0 0 10px; }
     .moduletable_vmenu.inner li:hover {
       background: url("../images/button.png") top left no-repeat; }
