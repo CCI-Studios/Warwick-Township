@@ -34,9 +34,10 @@
 }
 
 // banner 
-.module.banner {
+.module.slideshow {
 	background: url('../images/bg_masthead1.jpg') top center no-repeat;
 	height: 453px;
+	margin: -139px 0 0 0;
 	
 	> div {
 		position: absolute;
