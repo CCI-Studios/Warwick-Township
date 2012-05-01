@@ -59,3 +59,31 @@
 		border: none;
 	}
 }
+
+// columns
+
+ul.category-module {
+	padding: 0;
+	margin: 0;
+	
+	li {
+		list-style: none;
+		border-top: 1px solid $underline;
+		background: url('../images/events_listImg.png') left 1em no-repeat;
+		padding: 0 0 1em 50px;
+		&:first-child {
+			border: none;
+			padding-top: 0;
+		}
+		
+		h4 {
+			font-weight: bold;
+			margin: 0;
+			padding: 1em 0 0 0;
+		}
+		
+		p {
+			margin: 0;
+		}
+	}
+}
