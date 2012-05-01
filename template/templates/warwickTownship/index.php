@@ -59,8 +59,9 @@ $typekit = null;
 	<div id="wrapper">
 		<div id="header">
 			<jdoc:include type="modules" name="header" style="rounded" />
+			<div class="clear"></div>
 		</div>
-		
+
 		<div class="clear"></div>
 		
 		<div id="body" class="container">
