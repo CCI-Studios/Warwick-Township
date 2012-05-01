@@ -74,7 +74,7 @@ $typekit = null;
 			</div>
 			<?php endif; ?>
 			<div id="comp">
-				<jdoc:include type="modules" name="comp" style="xhtml" />
+				<jdoc:include type="component" />
 			</div>
 			<div id="columns">
 				<div id="col1">
