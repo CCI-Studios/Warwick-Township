@@ -468,6 +468,12 @@ button {
     width: 770px; }
   #comp.wide2 {
     width: 530px; }
+  body.templateColor-blue #comp {
+    background: blue; }
+  body.templateColor-red #comp {
+    background: red; }
+  body.templateColor-green #comp {
+    background: green; }
 
 #columns {
   float: left; }
@@ -626,7 +632,7 @@ ul.category-module {
     width: 940px;
     margin: 0 auto; }
   .module_hmenu.primary .menu li {
-    padding: 32px 15px 28px; }
+    padding: 32px 11px 28px; }
     .module_hmenu.primary .menu li:hover, .module_hmenu.primary .menu li.active {
       background: url("../images/menu_rollover.png") top center no-repeat; }
     .module_hmenu.primary .menu li:first-child {

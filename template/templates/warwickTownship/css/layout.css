@@ -29,6 +29,12 @@
     width: 770px; }
   #comp.wide2 {
     width: 530px; }
+  body.templateColor-blue #comp {
+    background: blue; }
+  body.templateColor-red #comp {
+    background: red; }
+  body.templateColor-green #comp {
+    background: green; }
 
 #columns {
   float: left; }
