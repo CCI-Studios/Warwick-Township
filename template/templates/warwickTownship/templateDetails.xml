@@ -37,4 +37,18 @@
 		<position>footer</position>
 		<position>copyright</position>
 	</positions>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="templatecolor" type="list" default="red"
+					label="Template Color"
+					description="This is the color of the tempalte">
+					<option value="green">Green</option>
+					<option value="red">Red</option>
+					<option value="blue">Blue</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
 </extension>
