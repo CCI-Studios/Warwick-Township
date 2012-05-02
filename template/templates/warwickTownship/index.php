@@ -83,12 +83,16 @@ $typekit = null;
 				<jdoc:include type="component" />
 			</div>
 			<div id="columns">
+				<?php if ($this->countModules('col1')): ?>
 				<div id="col1">
 					<jdoc:include type="modules" name="col1" style="xhtml" />
 				</div>
+				<?php endif; ?>
+				<?php if ($this->countModules('col2')): ?>
 				<div id="col2">
 					<jdoc:include type="modules" name="col2" style="xhtml" />
 				</div>
+				<?php endif; ?>
 			</div>
 			<?php if ($this->countModules('bottom')): ?>
 			<div id="bottom">
