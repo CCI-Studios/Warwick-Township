@@ -27,6 +27,8 @@ if ($_SERVER['SERVER_PORT'] === 8888 ||
 JHTML::_('behavior.mootools');
 $analytics = "UA-XXXXX-X"; // FIXME Update to client ID
 $typekit = null;
+
+$color = $this->params->get('templatecolor', 'green');
 ?>
 
 <head>
@@ -42,6 +44,7 @@ $typekit = null;
 	<!-- load css -->
 	<?php if ($testing): ?>
 		<link rel="stylesheet" href="/templates/<?= $this->template ?>/css/template.css">
+		<link rel="stylesheet" href="/templates/<?= $this->template ?>/css/template-<?php echo $color ?>.css">
 	<?php else: ?>
 		<link rel="stylesheet" href="/templates/<?= $this->template ?>/css/template.min.css">
 	<?php endif; ?>
@@ -54,7 +57,7 @@ $typekit = null;
 	<?php endif; ?>
 </head>
 
-<body class="<?= $menu ?>">
+<body class="<?= $menu ?> templateColor-<?php echo $color ?>">
 
 	<div id="wrapper">
 		<div id="header">
