@@ -38,6 +38,13 @@
 	float: left;
 	width: 770px;
 	padding: 0 0 0 20px;
+	
+	&.wide1 {
+		width: 770px;
+	}
+	&.wide2 {
+		width: 530px;
+	}
 }
 
 #columns {
