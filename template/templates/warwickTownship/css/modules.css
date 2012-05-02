@@ -52,7 +52,7 @@
 
 .module.masthead {
   z-index: 1;
-  margin: -10px 0 0 0;
+  margin: -9px 0 0 0;
   width: 100%;
   background: url("../images/business_bg.jpg") center top repeat-x; }
   .module.masthead > div {
@@ -67,11 +67,11 @@
     height: 123px; }
     .module.masthead > div > div > div h1 {
       font-size: 22px;
-      text-transform: uppercase;
       color: #FFF;
       padding: 80px 0 0 170px;
       margin: 0;
-      text-shadow: 2px 2px 2px #2e2e2e; }
+      text-shadow: 2px 2px 2px #2e2e2e;
+      border: none; }
 
 ul.category-module {
   padding: 0;

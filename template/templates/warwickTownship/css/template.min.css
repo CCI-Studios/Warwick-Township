@@ -373,7 +373,14 @@ body, select, input, textarea {
 /* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Helvetica CY";
-  font-weight: normal; }
+  font-weight: normal;
+  text-transform: uppercase; }
+
+h1 {
+  font-size: 22px;
+  border-bottom: 1px solid #ebebeb;
+  padding: 0 0 5px 0;
+  margin: 0; }
 
 .module h3,
 .moduletable h3 {
@@ -443,7 +450,7 @@ button {
 #body {
   margin: 2em auto; }
 
-#sidebarLeft {
+#sidebar1 {
   float: left;
   width: 140px;
   padding: 0 10px 0 0; }
@@ -457,6 +464,10 @@ button {
   float: left;
   width: 770px;
   padding: 0 0 0 20px; }
+  #comp.wide1 {
+    width: 770px; }
+  #comp.wide2 {
+    width: 530px; }
 
 #columns {
   float: left; }
@@ -468,6 +479,11 @@ button {
     float: left;
     width: 370px;
     background: url("../images/watermark_w.png") center 30px no-repeat; }
+
+#sidebar2 {
+  float: right;
+  width: 220px;
+  padding: 0 0 0 20px; }
 
 #bottom {
   float: left;
@@ -540,7 +556,7 @@ button {
 
 .module.masthead {
   z-index: 1;
-  margin: -10px 0 0 0;
+  margin: -9px 0 0 0;
   width: 100%;
   background: url("../images/business_bg.jpg") center top repeat-x; }
   .module.masthead > div {
@@ -555,11 +571,11 @@ button {
     height: 123px; }
     .module.masthead > div > div > div h1 {
       font-size: 22px;
-      text-transform: uppercase;
       color: #FFF;
       padding: 80px 0 0 170px;
       margin: 0;
-      text-shadow: 2px 2px 2px #2e2e2e; }
+      text-shadow: 2px 2px 2px #2e2e2e;
+      border: none; }
 
 ul.category-module {
   padding: 0;
@@ -659,7 +675,7 @@ ul.category-module {
   font-size: 12px;
   text-transform: uppercase;
   text-align: center;
-  padding: 0 30px 0 0; }
+  padding: 0 20px 0 0; }
   .moduletable_vmenu.home span {
     display: block;
     margin: -5px 0 1em 0;
@@ -714,14 +730,13 @@ ul.category-module {
 /* These selection declarations have to be separate
    No text-shadow: twitter.com/miketaylr/status/12228805301
    Also: hot pink! */
-/* TODO Update selection BG color */
 ::-moz-selection {
-  background: #FF5E99;
+  background: #a2191c;
   color: #fff;
   text-shadow: none; }
 
 ::selection {
-  background: #FF5E99;
+  background: #a2191c;
   color: #fff;
   text-shadow: none; }
 

@@ -11,7 +11,7 @@
 #body {
   margin: 2em auto; }
 
-#sidebarLeft {
+#sidebar1 {
   float: left;
   width: 140px;
   padding: 0 10px 0 0; }
@@ -25,6 +25,10 @@
   float: left;
   width: 770px;
   padding: 0 0 0 20px; }
+  #comp.wide1 {
+    width: 770px; }
+  #comp.wide2 {
+    width: 530px; }
 
 #columns {
   float: left; }
@@ -36,6 +40,11 @@
     float: left;
     width: 370px;
     background: url("../images/watermark_w.png") center 30px no-repeat; }
+
+#sidebar2 {
+  float: right;
+  width: 220px;
+  padding: 0 0 0 20px; }
 
 #bottom {
   float: left;
