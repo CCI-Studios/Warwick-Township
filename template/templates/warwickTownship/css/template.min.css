@@ -390,6 +390,31 @@ h1 {
   padding: 0 0 5px 0;
   margin: 0; }
 
+body.templateColor-orange h1, body.templateColor-orange
+.module h3, body.templateColor-orange
+.moduletable h3 {
+  color: orange; }
+body.templateColor-green h1, body.templateColor-green
+.module h3, body.templateColor-green
+.moduletable h3 {
+  color: #0b7419; }
+body.templateColor-yellow h1, body.templateColor-yellow
+.module h3, body.templateColor-yellow
+.moduletable h3 {
+  color: yellow; }
+body.templateColor-purple h1, body.templateColor-purple
+.module h3, body.templateColor-purple
+.moduletable h3 {
+  color: purple; }
+body.templateColor-blue h1, body.templateColor-blue
+.module h3, body.templateColor-blue
+.moduletable h3 {
+  color: blue; }
+body.templateColor-red h1, body.templateColor-red
+.module h3, body.templateColor-red
+.moduletable h3 {
+  color: red; }
+
 a, a:active, a:visited {
   color: #000;
   text-decoration: none; }
@@ -468,12 +493,6 @@ button {
     width: 770px; }
   #comp.wide2 {
     width: 530px; }
-  body.templateColor-blue #comp {
-    background: blue; }
-  body.templateColor-red #comp {
-    background: red; }
-  body.templateColor-green #comp {
-    background: green; }
 
 #columns {
   float: left; }
@@ -568,9 +587,10 @@ button {
     background: url("../images/business_bg.jpg") center top repeat-x; }
   .module.masthead > div {
     width: 940px;
-    padding: 0 10px;
+    padding: 0 10px 6px;
     margin: 0 auto;
-    height: 123px; }
+    height: 123px;
+    background: url("../images/bg_mastheadShadow.jpg") bottom center no-repeat; }
   body.templateColor-green .module.masthead > div > div {
     background: url("../images/business_rightImg.png") right bottom no-repeat; }
   .module.masthead > div > div > div {
@@ -629,8 +649,18 @@ ul.category-module {
   .module_hmenu.primary > div {
     background-color: white;
     border-top: 3px solid black; }
+    body.templateColor-orange .module_hmenu.primary > div {
+      border-top: 3px solid orange; }
     body.templateColor-green .module_hmenu.primary > div {
-      border-top: 3px solid green; }
+      border-top: 3px solid #0b7419; }
+    body.templateColor-yellow .module_hmenu.primary > div {
+      border-top: 3px solid yellow; }
+    body.templateColor-purple .module_hmenu.primary > div {
+      border-top: 3px solid purple; }
+    body.templateColor-blue .module_hmenu.primary > div {
+      border-top: 3px solid blue; }
+    body.templateColor-red .module_hmenu.primary > div {
+      border-top: 3px solid red; }
   .module_hmenu.primary > div > div {
     position: relative;
     width: 940px;

@@ -24,6 +24,31 @@ h1 {
   padding: 0 0 5px 0;
   margin: 0; }
 
+body.templateColor-orange h1, body.templateColor-orange
+.module h3, body.templateColor-orange
+.moduletable h3 {
+  color: orange; }
+body.templateColor-green h1, body.templateColor-green
+.module h3, body.templateColor-green
+.moduletable h3 {
+  color: #0b7419; }
+body.templateColor-yellow h1, body.templateColor-yellow
+.module h3, body.templateColor-yellow
+.moduletable h3 {
+  color: yellow; }
+body.templateColor-purple h1, body.templateColor-purple
+.module h3, body.templateColor-purple
+.moduletable h3 {
+  color: purple; }
+body.templateColor-blue h1, body.templateColor-blue
+.module h3, body.templateColor-blue
+.moduletable h3 {
+  color: blue; }
+body.templateColor-red h1, body.templateColor-red
+.module h3, body.templateColor-red
+.moduletable h3 {
+  color: red; }
+
 a, a:active, a:visited {
   color: #000;
   text-decoration: none; }

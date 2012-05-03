@@ -58,9 +58,10 @@
     background: url("../images/business_bg.jpg") center top repeat-x; }
   .module.masthead > div {
     width: 940px;
-    padding: 0 10px;
+    padding: 0 10px 6px;
     margin: 0 auto;
-    height: 123px; }
+    height: 123px;
+    background: url("../images/bg_mastheadShadow.jpg") bottom center no-repeat; }
   body.templateColor-green .module.masthead > div > div {
     background: url("../images/business_rightImg.png") right bottom no-repeat; }
   .module.masthead > div > div > div {

@@ -24,8 +24,18 @@
   .module_hmenu.primary > div {
     background-color: white;
     border-top: 3px solid black; }
+    body.templateColor-orange .module_hmenu.primary > div {
+      border-top: 3px solid orange; }
     body.templateColor-green .module_hmenu.primary > div {
-      border-top: 3px solid green; }
+      border-top: 3px solid #0b7419; }
+    body.templateColor-yellow .module_hmenu.primary > div {
+      border-top: 3px solid yellow; }
+    body.templateColor-purple .module_hmenu.primary > div {
+      border-top: 3px solid purple; }
+    body.templateColor-blue .module_hmenu.primary > div {
+      border-top: 3px solid blue; }
+    body.templateColor-red .module_hmenu.primary > div {
+      border-top: 3px solid red; }
   .module_hmenu.primary > div > div {
     position: relative;
     width: 940px;
