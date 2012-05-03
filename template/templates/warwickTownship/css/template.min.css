@@ -539,17 +539,17 @@ button {
     color: gray; }
 
 .module.slideshow {
-  background: url("../images/bg_masthead1.jpg") top center no-repeat;
+  background: url("../images/bg_slideshow1.jpg") top center no-repeat;
   height: 453px;
   margin: -139px 0 0 0; }
   .module.slideshow > div {
     position: absolute;
     width: 100%;
-    background: url("../images/bg_mastheadShadow.png") bottom center no-repeat;
+    background: url("../images/bg_slideshowShadow.png") bottom center no-repeat;
     padding-bottom: 9px;
     bottom: -9px; }
   .module.slideshow > div > div {
-    background: url("../images/bg_masthead.png") bottom center repeat-x;
+    background: url("../images/bg_slideshow.png") bottom center repeat-x;
     padding: 16px 0 1px; }
   .module.slideshow > div > div > div {
     width: 940px;
@@ -563,18 +563,20 @@ button {
 .module.masthead {
   z-index: 1;
   margin: -9px 0 0 0;
-  width: 100%;
-  background: url("../images/business_bg.jpg") center top repeat-x; }
+  width: 100%; }
+  body.templateColor-green .module.masthead {
+    background: url("../images/business_bg.jpg") center top repeat-x; }
   .module.masthead > div {
     width: 940px;
     padding: 0 10px;
     margin: 0 auto;
     height: 123px; }
-  .module.masthead > div > div {
+  body.templateColor-green .module.masthead > div > div {
     background: url("../images/business_rightImg.png") right bottom no-repeat; }
   .module.masthead > div > div > div {
-    background: url("../images/business_leftImg.png") 55px bottom no-repeat;
     height: 123px; }
+    body.templateColor-green .module.masthead > div > div > div {
+      background: url("../images/business_leftImg.png") 55px bottom no-repeat; }
     .module.masthead > div > div > div h1 {
       font-size: 22px;
       color: #FFF;
@@ -627,12 +629,14 @@ ul.category-module {
   .module_hmenu.primary > div {
     background-color: white;
     border-top: 3px solid black; }
+    body.templateColor-green .module_hmenu.primary > div {
+      border-top: 3px solid green; }
   .module_hmenu.primary > div > div {
     position: relative;
     width: 940px;
     margin: 0 auto; }
   .module_hmenu.primary .menu li {
-    padding: 32px 1px 28px; }
+    padding: 32px 11px 28px; }
     .module_hmenu.primary .menu li:hover, .module_hmenu.primary .menu li.active {
       background: url("../images/menu_rollover.png") top center no-repeat; }
     .module_hmenu.primary .menu li:first-child {
