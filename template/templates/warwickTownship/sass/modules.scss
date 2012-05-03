@@ -41,20 +41,20 @@
 
 // banner 
 .module.slideshow {
-	background: url('../images/bg_masthead1.jpg') top center no-repeat;
+	background: url('../images/bg_slideshow1.jpg') top center no-repeat;
 	height: 453px;
 	margin: -139px 0 0 0;
 	
 	> div {
 		position: absolute;
 		width: 100%;
-		background: url('../images/bg_mastheadShadow.png') bottom center no-repeat;
+		background: url('../images/bg_slideshowShadow.png') bottom center no-repeat;
 		padding-bottom: 9px;
 		bottom: -9px;
 	}
 	
 	> div > div {
-		background: url('../images/bg_masthead.png') bottom center repeat-x;
+		background: url('../images/bg_slideshow.png') bottom center repeat-x;
 		padding: 16px 0 1px;
 	}
 	
