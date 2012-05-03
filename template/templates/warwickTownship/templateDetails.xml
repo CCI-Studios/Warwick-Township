@@ -44,9 +44,12 @@
 				<field name="templatecolor" type="list" default="red"
 					label="Template Color"
 					description="This is the color of the tempalte">
+					<option value="orange">Orange</option>
 					<option value="green">Green</option>
-					<option value="red">Red</option>
+					<option value="yellow">Yellow</option>
+					<option value="purple">Purple</option>
 					<option value="blue">Blue</option>
+					<option value="red">Red</option>
 				</field>
 			</fieldset>
 		</fields>
