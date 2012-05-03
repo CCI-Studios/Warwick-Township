@@ -29,7 +29,7 @@
     width: 940px;
     margin: 0 auto; }
   .module_hmenu.primary .menu li {
-    padding: 32px 11px 28px; }
+    padding: 32px 1px 28px; }
     .module_hmenu.primary .menu li:hover, .module_hmenu.primary .menu li.active {
       background: url("../images/menu_rollover.png") top center no-repeat; }
     .module_hmenu.primary .menu li:first-child {
