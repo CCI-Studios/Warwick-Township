@@ -76,7 +76,13 @@
 
 #footer {
 	width: 100%;
-	border-top: 3px solid $business;
+	border-top: 3px solid black;
+	body.templateColor-orange & { border-top: 3px solid $government; }
+	body.templateColor-green & { border-top: 3px solid $business; }
+	body.templateColor-yellow & { border-top: 3px solid $living; }
+	body.templateColor-purple & { border-top: 3px solid $visiting; }
+	body.templateColor-blue & { border-top: 3px solid $news; }
+	body.templateColor-red & { border-top: 3px solid $emergency; }
 	
 	> div {
 		border-top: 2px solid #f6f6f6;
