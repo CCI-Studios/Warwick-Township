@@ -53,21 +53,28 @@
 .module.masthead {
   z-index: 1;
   margin: -9px 0 0 0;
-  width: 100%; }
+  width: 100%;
+  background: url("../images/bg_masthead.jpg"); }
+  body.templateColor-orange .module.masthead {
+    background-position: center top; }
   body.templateColor-green .module.masthead {
-    background: url("../images/business_bg.jpg") center top repeat-x; }
+    background-position: center 645px; }
+  body.templateColor-yellow .module.masthead {
+    background-position: center 385px; }
+  body.templateColor-purple .module.masthead {
+    background-position: center 255px; }
+  body.templateColor-blue .module.masthead {
+    background-position: center 125px; }
+  body.templateColor-red .module.masthead {
+    background-position: center -5px; }
   .module.masthead > div {
     width: 940px;
-    padding: 0 10px 6px;
+    padding: 0 10px 7px;
     margin: 0 auto;
     height: 123px;
     background: url("../images/bg_mastheadShadow.jpg") bottom center no-repeat; }
-  body.templateColor-green .module.masthead > div > div {
-    background: url("../images/business_rightImg.png") right bottom no-repeat; }
   .module.masthead > div > div > div {
     height: 123px; }
-    body.templateColor-green .module.masthead > div > div > div {
-      background: url("../images/business_leftImg.png") 55px bottom no-repeat; }
     .module.masthead > div > div > div h1 {
       font-size: 22px;
       color: #FFF;
@@ -93,3 +100,6 @@ ul.category-module {
       padding: 1em 0 0 0; }
     ul.category-module li p {
       margin: 0; }
+
+.moduletable.watermark {
+  background: url("../images/w_green.png") bottom right no-repeat; }

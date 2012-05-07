@@ -38,8 +38,7 @@
     padding: 0 40px 0 0; }
   #columns #col2 {
     float: left;
-    width: 370px;
-    background: url("../images/watermark_w.png") center 30px no-repeat; }
+    width: 370px; }
 
 #sidebar2 {
   float: right;
@@ -53,7 +52,19 @@
 
 #footer {
   width: 100%;
-  border-top: 3px solid #0b7419; }
+  border-top: 3px solid black; }
+  body.templateColor-orange #footer {
+    border-top: 3px solid #cb6a02; }
+  body.templateColor-green #footer {
+    border-top: 3px solid #0b7419; }
+  body.templateColor-yellow #footer {
+    border-top: 3px solid #d4a116; }
+  body.templateColor-purple #footer {
+    border-top: 3px solid #530d89; }
+  body.templateColor-blue #footer {
+    border-top: 3px solid #050b60; }
+  body.templateColor-red #footer {
+    border-top: 3px solid #a2191c; }
   #footer > div {
     border-top: 2px solid #f6f6f6;
     background-color: #eaeaea; }

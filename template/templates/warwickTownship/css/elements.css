@@ -27,7 +27,7 @@ h1 {
 body.templateColor-orange h1, body.templateColor-orange
 .module h3, body.templateColor-orange
 .moduletable h3 {
-  color: orange; }
+  color: #cb6a02; }
 body.templateColor-green h1, body.templateColor-green
 .module h3, body.templateColor-green
 .moduletable h3 {
@@ -35,19 +35,19 @@ body.templateColor-green h1, body.templateColor-green
 body.templateColor-yellow h1, body.templateColor-yellow
 .module h3, body.templateColor-yellow
 .moduletable h3 {
-  color: yellow; }
+  color: #d4a116; }
 body.templateColor-purple h1, body.templateColor-purple
 .module h3, body.templateColor-purple
 .moduletable h3 {
-  color: purple; }
+  color: #530d89; }
 body.templateColor-blue h1, body.templateColor-blue
 .module h3, body.templateColor-blue
 .moduletable h3 {
-  color: blue; }
+  color: #050b60; }
 body.templateColor-red h1, body.templateColor-red
 .module h3, body.templateColor-red
 .moduletable h3 {
-  color: red; }
+  color: #a2191c; }
 
 a, a:active, a:visited {
   color: #000;
