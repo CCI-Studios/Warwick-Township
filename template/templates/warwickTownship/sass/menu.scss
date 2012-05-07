@@ -152,21 +152,7 @@
 	font-weight: bold;
 	
 	li {
-		line-height: 27px;
-		padding: 0 0 0 10px;
-		&:hover {
-			background: url('../images/button.png') top left no-repeat;
-			
-			a {
-				background: url('../images/button.png') bottom right no-repeat;
-				color: #fff;
-				text-decoration: none;
-			}
-		}
 		
-		a {
-			display: block;
-			line-height: 27px;
 		}
 	}
 }
