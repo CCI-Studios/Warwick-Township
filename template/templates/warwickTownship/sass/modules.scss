@@ -76,8 +76,13 @@
 	z-index: 1;
 	margin: -9px 0 0 0;
 	width: 100%;
-	body.templateColor-green & { background: url('../images/business_bg.jpg') center top repeat-x; }
-
+	background: url('../images/bg_masthead.jpg');
+	body.templateColor-orange & { background-position: center top; }
+	body.templateColor-green & { background-position: center 645px; }
+	body.templateColor-yellow & { background-position: center 385px; }
+	body.templateColor-purple & { background-position: center 255px; }
+	body.templateColor-blue & { background-position: center 125px; }
+	body.templateColor-red & { background-position: center -5px; }
 	
 	> div {
 		width: 940px;
