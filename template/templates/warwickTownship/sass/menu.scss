@@ -56,6 +56,12 @@
 			&:hover,
 			&.active {
 				background: url('../images/menu_rollover.png') top center no-repeat;
+				body.templateColor-orange & { background: url('../images/menu_rollOrange.png') top center no-repeat; }
+				body.templateColor-green & { background: url('../images/menu_rollGreen.png') top center no-repeat; }
+				body.templateColor-yellow & { background: url('../images/menu_rollYellow.png') top center no-repeat; }
+				body.templateColor-purple & { background: url('../images/menu_rollPurple.png') top center no-repeat; }
+				body.templateColor-blue & { background: url('../images/menu_rollBlue.png') top center no-repeat; }
+				body.templateColor-red & { background: url('../images/menu_rollRed.png') top center no-repeat; }
 			}
 			
 			&:first-child {
