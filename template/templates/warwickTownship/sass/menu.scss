@@ -152,7 +152,16 @@
 	font-weight: bold;
 	
 	li {
+		padding: 0 0 1em 10px;
 		
+		a:hover {
+			text-decoration: none;
+			body.templateColor-orange & { color: $government; }
+			body.templateColor-green & { color: $business; }
+			body.templateColor-yellow & { color: $living; }
+			body.templateColor-purple & { color: $visiting; }
+			body.templateColor-blue & { color: $news; }
+			body.templateColor-red & { color: $emergency; }
 		}
 	}
 }
