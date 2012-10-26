@@ -1,2 +1,11 @@
 @import "_variables";
 @import "_mixins";
+
+.list-icons-green {
+
+	li {
+		list-style: none;
+		background: url('../images/icon_check-green.png') left center no-repeat;
+		line-height: 44px;
+	}
+}
