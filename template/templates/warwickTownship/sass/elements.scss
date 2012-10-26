@@ -62,17 +62,6 @@ h4 {
 	margin: 0;
 }
 
-h1,
-.module h3,
-.moduletable h3 {
-	body.templateColor-orange & { color: $government; }
-	body.templateColor-green & { color: $business; }
-	body.templateColor-yellow & { color: $living; }
-	body.templateColor-purple & { color: $visiting; }
-	body.templateColor-blue & { color: $news; }
-	body.templateColor-red & { color: $emergency; }
-}
-
 a, a:active, a:visited {
 	color: #000;
 	text-decoration: none;
