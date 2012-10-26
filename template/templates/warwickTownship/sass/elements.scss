@@ -76,8 +76,16 @@ h1,
 a, a:active, a:visited {
 	color: #000;
 	text-decoration: none;
+
+	.item-page & {
+		body.templateColor-orange & { color: $government; }
+		body.templateColor-green & { color: $business; }
+		body.templateColor-yellow & { color: $living; }
+		body.templateColor-purple & { color: $visiting; }
+		body.templateColor-blue & { color: $news; }
+		body.templateColor-red & { color: $emergency; }
+	}
 }
 a:hover {
-	color: #000;
 	text-decoration: underline;
 }
