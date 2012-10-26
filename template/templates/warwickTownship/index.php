@@ -43,7 +43,7 @@ $color = $this->params->get('templatecolor', 'green');
 
 	<!-- load css -->
 	<?php if ($testing): ?>
-		<link rel="stylesheet" href="/templates/<?= $this->template ?>/css/template.css">
+		<link rel="stylesheet" href="/templates/<?= $this->template ?>/css/template.min.css">
 		<link rel="stylesheet" href="/templates/<?= $this->template ?>/css/template-<?php echo $color ?>.css">
 	<?php else: ?>
 		<link rel="stylesheet" href="/templates/<?= $this->template ?>/css/template.min.css">
