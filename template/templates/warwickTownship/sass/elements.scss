@@ -13,13 +13,44 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: "Helvetica CY";
 	font-weight: normal;
 	text-transform: uppercase;
+	body.templateColor-orange & { color: $government; }
+	body.templateColor-green & { color: $business; }
+	body.templateColor-yellow & { color: $living; }
+	body.templateColor-purple & { color: $visiting; }
+	body.templateColor-blue & { color: $news; }
+	body.templateColor-red & { color: $emergency; }
 }
 
 h1 {
 	font-size: 22px;
 	border-bottom: 1px solid $underline;
 	padding: 0 0 5px 0;
-	margin: 0;
+	margin-top: 0;
+}
+
+h2 {
+	font-size: 18px;
+	margin-top: 1.7em;
+	text-decoration: underline; 
+}
+
+h3 {
+	margin: 1.7em 0 0;
+	font-size: 16px;
+
+	+ h4,
+	+ p {
+		margin-top: .7em;
+	}
+}
+
+h4 {
+	font-size: 14px;
+	margin-bottom: 0;
+
+	+ p {
+		margin-top: 0;
+	}
 }
 
 .module h3,
