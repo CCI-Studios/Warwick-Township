@@ -1,0 +1,8 @@
+.list-icon-green {
+  padding: 0; }
+  .list-icon-green li {
+    list-style: none;
+    background: url("../images/icon_check-green.png") left center no-repeat;
+    font-size: 14px;
+    line-height: 44px;
+    padding-left: 60px; }
