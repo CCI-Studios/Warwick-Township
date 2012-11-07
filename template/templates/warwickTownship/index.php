@@ -67,22 +67,26 @@ $color = $this->params->get('templatecolor', 'green');
 
 		<div class="clear"></div>
 		
-		<div id="body" class="container">
+		<div id="main" class="container">
+			<?php if ($this->countModules('sidebar1')): ?>
 			<div id="sidebar1">
 				<jdoc:include type="modules" name="sidebar1" style="xhtml" />
 			</div>
+			<?php endif; ?>
 			<?php if ($this->countModules('top')): ?>
 			<div id="top">
 				<jdoc:include type="modules" name="top" style="xhtml" />
 			</div>
 			<?php endif; ?>
-			<div id="comp" class="<?php 
-						if (!$this->countModules('sidebar2')) {
-							echo 'wide1';
-						} else {
-							echo 'wide2';
-						}
-				?>">
+			<div id="comp" class="<?php
+							if ($this->countModules('sidebar1')) {
+								echo 'with-sidebar1';
+							}
+					?> <?php
+							if ($this->countModules('sidebar2')) {
+								echo 'with-sidebar2';
+							}
+					?>">
 				<jdoc:include type="component" />
 			</div>
 			<div id="columns">
