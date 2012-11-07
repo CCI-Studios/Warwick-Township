@@ -26,3 +26,47 @@ input:invalid, textarea:invalid {
 /* Make buttons play nice in IE:
    www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
 button {  width: auto; overflow: visible; }
+
+fieldset {
+	border: none;
+	padding: 0;
+	margin: 0 0 2em 0;
+}
+
+form#finder-search {
+	position: relative;
+}
+
+button.button {
+	border: 0;
+	position: absolute;
+	right: 0px;
+	text-indent: -9999px;
+	background: url('../images/icon-search.png') center center no-repeat;
+	width: 20px;
+	height: 27px;
+	margin-right: 10px;
+}
+
+input[type="text"] {
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 25px;
+	line-height: 25px;
+	width: 130px;
+	padding: 0 30px 0 10px;
+	border: 1px solid #bfbfbf;
+	border-radius: 15px;
+	font-size: 10px;
+	color: $grey;
+	box-shadow: inset 0px 0px 2px rgba(black, .25);
+	@include transition(border linear 0.2s);
+	@include transition(box-shadow linear 0.2s);
+
+	&:focus {
+		outline: 0;
+		border-color: rgba(82, 168, 236, 0.8);
+		box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+	}
+}
