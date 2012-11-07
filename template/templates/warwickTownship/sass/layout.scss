@@ -41,18 +41,30 @@
 #comp {
 	float: left;
 	width: 770px;
-	padding: 0 0 0 20px;
-	
-	&.wide1 {
-		width: 770px;
+	padding: 0 0 2em 0;
+
+	&.with-sidebar1 {
+		width: 790px;
 	}
-	&.wide2 {
+
+	&.with-sidebar2 {
+		width: 700px;
+		padding-left: 0;
+	}
+
+	&.with-sidebar1.with-sidebar2 {
 		width: 530px;
+		padding-left: 20px;
 	}
+}
+
+.without-sidebar1.with-sidebar2 {
+	width: 670px;
 }
 
 #columns {
 	float: left;
+	margin-left: 150px;
 	
 	#col1 {
 		float: left;
