@@ -140,7 +140,7 @@ code,
 kbd,
 samp {
   font-family: monospace, serif;
-  _font-family: 'courier new', monospace;
+  _font-family: "courier new", monospace;
   font-size: 1em; }
 
 /*
@@ -586,7 +586,7 @@ input[type="text"] {
 
 #bottom {
   float: left;
-  width: 780px;
+  width: 770px;
   margin: 2em 0 0 170px; }
   .home #bottom {
     margin-left: 150px; }
@@ -710,6 +710,9 @@ ul.category-module {
     ul.category-module li:first-child {
       border: none;
       padding-top: 0; }
+    .events-page ul.category-module li {
+      background: none;
+      padding-left: 0; }
     ul.category-module li h4 {
       font-weight: bold;
       margin: 0;
@@ -739,7 +742,7 @@ ul.category-module {
   font-size: 13px;
   font-weight: bold;
   width: 100%;
-  border-top: 1px solid #fff;
+  border-top: 1px solid white;
   background: url("../images/bg_menuShadow.png") bottom center no-repeat;
   padding: 0 0 10px 0;
   z-index: 3; }
@@ -794,7 +797,7 @@ ul.category-module {
   padding: 20px 0; }
   .moduletable_hmenu.secondary ul li {
     padding: 0 10px;
-    border-left: 1px solid #000; }
+    border-left: 1px solid black; }
     .moduletable_hmenu.secondary ul li:first-child {
       border: none; }
 
@@ -851,21 +854,35 @@ ul.category-module {
         color: #a2191c; }
 
 /* /vmenu */
+.mosaic,
+.phocagallery-box-file-first {
+  margin: 0px 20px; }
+  .mosaic:first-child,
+  .phocagallery-box-file-first:first-child {
+    margin-left: 0; }
+  .mosaic img,
+  .phocagallery-box-file-first img {
+    border-radius: 10px;
+    border: none !important;
+    box-shadow: 0px 12px 12px -12px #898887 !important;
+    margin-bottom: 10px !important; }
+
+#phocagallery .pg-name {
+  margin: 0; }
+
 .moduletable.gallery {
-  width: 100%;
   overflow: scroll; }
-  .moduletable.gallery ul.sigProContainer {
-    width: 2000px; }
-    .moduletable.gallery ul.sigProContainer li.sigProThumb {
-      margin: 5px 20px; }
-      .moduletable.gallery ul.sigProContainer li.sigProThumb span.sigProLinkOuterWrapper {
-        padding: 0; }
-        .moduletable.gallery ul.sigProContainer li.sigProThumb span.sigProLinkOuterWrapper span.sigProLinkWrapper {
-          border: none !important;
-          padding: 0 !important;
-          box-shadow: 0px 12px 12px -12px #898887; }
-          .moduletable.gallery ul.sigProContainer li.sigProThumb span.sigProLinkOuterWrapper span.sigProLinkWrapper img {
-            border-radius: 10px; }
+  .moduletable.gallery > h3 {
+    position: absolute;
+    width: 770px; }
+
+#phocagallery-module-ri {
+  width: 5170px;
+  margin-top: 3.3em;
+  overflow: hidden; }
+
+.phocagallery-box-file {
+  margin-bottom: 5px; }
 
 /* styles */
 .clr, .clear {
