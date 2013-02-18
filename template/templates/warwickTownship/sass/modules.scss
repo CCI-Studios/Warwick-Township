@@ -119,6 +119,11 @@ ul.category-module {
 			border: none;
 			padding-top: 0;
 		}
+
+		.events-page & {
+			background: none;
+			padding-left: 0;
+		}
 		
 		h4 {
 			font-weight: bold;
