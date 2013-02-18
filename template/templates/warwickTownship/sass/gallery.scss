@@ -1,32 +1,47 @@
 @import "_variables";
 @import "_mixins";
 
-// bottom gallery module
+// default gallery styles
 
-.moduletable.gallery {
-	width: 100%;
-	overflow: scroll;
-	
-	ul.sigProContainer {
-		width: 2000px;
+.mosaic,
+.phocagallery-box-file-first {
+	margin: 0px 20px;
 
-		li.sigProThumb {
-			margin: 5px 20px;
+	&:first-child {
+		margin-left: 0;
+	}
 
-			span.sigProLinkOuterWrapper {
-				padding: 0;
-
-				span.sigProLinkWrapper {
-					border: none !important;
-					padding: 0 !important;
-					box-shadow: 0px 12px 12px -12px #898887;
-
-					img {
-						border-radius: 10px;
-					}
-				}
-			}
-		}
+	img {
+		border-radius: 10px;
+		border: none !important;
+		box-shadow: 0px 12px 12px -12px #898887 !important;
+		margin-bottom: 10px !important;
 	}
 }
 
+#phocagallery .pg-name {
+	margin: 0;
+}
+
+// bottom gallery module
+
+.moduletable.gallery {
+	overflow: scroll;
+
+	> h3 {
+		position: absolute;
+		width: 770px;
+	}
+}
+
+#phocagallery-module-ri {
+	width: 5170px;
+	margin-top: 3.3em;
+	overflow: hidden;
+}
+
+// gallery page
+
+.phocagallery-box-file {
+	margin-bottom: 5px;
+}
