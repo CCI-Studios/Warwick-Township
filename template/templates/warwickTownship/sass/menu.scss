@@ -30,6 +30,10 @@
 	background: url('../images/bg_menuShadow.png') bottom center no-repeat;
 	padding: 0 0 10px 0;
 	z-index: 3;
+
+	.ie7 & {
+		padding-bottom: 0;
+	}
 	
 	> div {
 		background-color: white;
