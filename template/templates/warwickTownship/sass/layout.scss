@@ -132,3 +132,35 @@ dd.result-text {
 	padding: 1em;
 	margin: 0;
 }
+
+// category blog layout
+.items-row {
+	margin-top: 2em;
+
+	&:first-child {
+		margin-top: 0;
+	}
+}
+
+//pagination
+
+div.pagination {
+
+	ul {
+		list-style: none;
+		width: 100%;
+		text-align: center;
+		padding: 0;
+		display: inline-block;
+		*display: inline;
+		*zoom: 1;
+
+
+		li {
+			padding: 0 7px;
+			display: inline-block;
+			*display: inline;
+			*zoom: 1;
+		}
+	}
+}
