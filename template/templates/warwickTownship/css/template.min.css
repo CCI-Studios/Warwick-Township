@@ -372,7 +372,7 @@ body, select, input, textarea {
 
 /* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica CY";
+  font-family: "Helvetica CY", Helvetica, Arial, sans-serif;
   font-weight: normal;
   text-transform: uppercase; }
   body.templateColor-orange h1, body.templateColor-orange h2, body.templateColor-orange h3, body.templateColor-orange h4, body.templateColor-orange h5, body.templateColor-orange h6 {
@@ -501,7 +501,6 @@ input[type="text"] {
   right: 0;
   top: 0;
   height: 25px;
-  line-height: 25px;
   width: 130px;
   padding: 0 30px 0 10px;
   border: 1px solid #bfbfbf;
@@ -519,6 +518,8 @@ input[type="text"] {
   -o-transition: box-shadow linear 0.2s;
   -ms-transition: box-shadow linear 0.2s;
   transition: box-shadow linear 0.2s; }
+  .ie7 input[type="text"], .ie8 input[type="text"] {
+    line-height: 25px; }
   input[type="text"]:focus {
     outline: 0;
     border-color: rgba(82, 168, 236, 0.8);
@@ -624,6 +625,25 @@ dd.result-text {
   padding: 1em;
   margin: 0; }
 
+.items-row {
+  margin-top: 2em; }
+  .items-row:first-child {
+    margin-top: 0; }
+
+div.pagination ul {
+  list-style: none;
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+  div.pagination ul li {
+    padding: 0 7px;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1; }
+
 /* @group modules */
 .module.socialLink > div > div {
   position: absolute;
@@ -647,7 +667,8 @@ dd.result-text {
 .module.slideshow {
   background: url("../images/bg_slideshow1.jpg") top center no-repeat;
   height: 453px;
-  margin: -139px 0 0 0; }
+  margin: -139px 0 0 0;
+  position: relative; }
   .module.slideshow > div {
     position: absolute;
     width: 100%;
@@ -746,6 +767,8 @@ ul.category-module {
   background: url("../images/bg_menuShadow.png") bottom center no-repeat;
   padding: 0 0 10px 0;
   z-index: 3; }
+  .ie7 .module_hmenu.primary {
+    padding-bottom: 0; }
   .module_hmenu.primary > div {
     background-color: white;
     border-top: 3px solid black; }
@@ -823,7 +846,7 @@ ul.category-module {
   list-style: none; }
 
 .moduletable_vmenu.home {
-  font-family: "Helvetica CY";
+  font-family: "Helvetica CY", Helvetica, Arial, sans-serif;
   font-size: 12px;
   text-transform: uppercase;
   text-align: center;
@@ -871,7 +894,7 @@ ul.category-module {
   margin: 0; }
 
 .moduletable.gallery {
-  overflow: scroll; }
+  overflow-x: scroll; }
   .moduletable.gallery > h3 {
     position: absolute;
     width: 770px; }
@@ -880,6 +903,9 @@ ul.category-module {
   width: 5170px;
   margin-top: 3.3em;
   overflow: hidden; }
+  .ie7 #phocagallery-module-ri {
+    display: inline;
+    *zoom: 1; }
 
 .phocagallery-box-file {
   margin-bottom: 5px; }
