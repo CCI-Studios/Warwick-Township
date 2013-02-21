@@ -26,7 +26,7 @@
 // bottom gallery module
 
 .moduletable.gallery {
-	overflow: scroll;
+	overflow-x: scroll;
 
 	> h3 {
 		position: absolute;
@@ -38,6 +38,11 @@
 	width: 5170px;
 	margin-top: 3.3em;
 	overflow: hidden;
+
+	.ie7 & {
+		display: inline;
+		*zoom: 1;
+	}
 }
 
 // gallery page
