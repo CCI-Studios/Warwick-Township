@@ -10,7 +10,7 @@ body, select, input, textarea {
 
 /* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
 h1, h2, h3, h4, h5, h6 { 
-	font-family: "Helvetica CY";
+	font-family: "Helvetica CY", Helvetica, Arial, sans-serif;
 	font-weight: normal;
 	text-transform: uppercase;
 	body.templateColor-orange & { color: $government; }
