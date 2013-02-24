@@ -704,6 +704,8 @@ div.pagination ul {
     background-position: center 260px; }
   body.templateColor-red .module.masthead {
     background-position: center 130px; }
+  .module.masthead.templateColor-blue {
+    background-position: center 260px; }
   .module.masthead > div {
     width: 940px;
     padding: 0 10px 7px;

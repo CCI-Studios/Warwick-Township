@@ -74,6 +74,9 @@
 	body.templateColor-purple & { background-position: center 390px; }
 	body.templateColor-blue & { background-position: center 260px; }
 	body.templateColor-red & { background-position: center 130px; }
+
+	//for upcoming events with no menu item attached
+	&.templateColor-blue { background-position: center 260px; }
 	
 	> div {
 		width: 940px;
