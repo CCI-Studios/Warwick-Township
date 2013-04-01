@@ -6,24 +6,28 @@
 
 // header
 
-.module.socialLink > div > div {
-	position: absolute;
-	right: 185px;
-}
-
+.module.fontResizer,
 .module.socialLink,
 .module.search {
-	position: absolute;
-	top: 10px;
-	width: 100%;
+	float: right;
+	margin-left: 10px;
 	z-index: 2;
-	
-	> div {
-		position: relative;
-		width: 940px;
-		margin: 0 auto;
+	position: relative;
+}
+
+.module.fontResizer {
+	line-height: 27px;
+
+	.bigger {
+		font-size: 18px;
 	}
 
+	.smaller {
+		font-size: 14px;
+	}
+}
+
+.module.search {
 	form {
 		position: relative;
 	}
