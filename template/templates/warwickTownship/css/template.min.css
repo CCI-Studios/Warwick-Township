@@ -497,7 +497,6 @@ button.button {
   margin-right: 10px; }
 
 input[type="text"] {
-  position: absolute;
   right: 0;
   top: 0;
   height: 25px;
@@ -518,6 +517,8 @@ input[type="text"] {
   -o-transition: box-shadow linear 0.2s;
   -ms-transition: box-shadow linear 0.2s;
   transition: box-shadow linear 0.2s; }
+  #search-form input[type="text"] {
+    position: absolute; }
   .ie7 input[type="text"], .ie8 input[type="text"] {
     line-height: 25px; }
   input[type="text"]:focus {
@@ -534,9 +535,13 @@ input[type="text"] {
 #wrapper {
   min-width: 960px; }
 
-#header {
+#headerTop {
+  padding: 10px 0;
   position: relative;
-  padding: 50px 0 0 0; }
+  min-height: 25px; }
+
+#header {
+  position: relative; }
 
 #main {
   margin: 2em auto; }
@@ -645,24 +650,23 @@ div.pagination ul {
     *zoom: 1; }
 
 /* @group modules */
-.module.socialLink > div > div {
-  position: absolute;
-  right: 185px; }
-
+.module.fontResizer,
 .module.socialLink,
 .module.search {
-  position: absolute;
-  top: 10px;
-  width: 100%;
-  z-index: 2; }
-  .module.socialLink > div,
-  .module.search > div {
-    position: relative;
-    width: 940px;
-    margin: 0 auto; }
-  .module.socialLink form,
-  .module.search form {
-    position: relative; }
+  float: right;
+  margin-left: 10px;
+  z-index: 2;
+  position: relative; }
+
+.module.fontResizer {
+  line-height: 27px; }
+  .module.fontResizer .bigger {
+    font-size: 18px; }
+  .module.fontResizer .smaller {
+    font-size: 14px; }
+
+.module.search form {
+  position: relative; }
 
 .module.slideshow {
   background: url("../images/bg_slideshow1.jpg") top center no-repeat;
@@ -940,6 +944,12 @@ ul.category-module {
 
 .date {
   color: #a2191c; }
+
+.image-border-style {
+  border-radius: 15px;
+  border: 1px solid black;
+  margin-bottom: 3px;
+  box-shadow: 0px 8px 6px -7px rgba(0, 0, 0, 0.7); }
 
 .list-icon-green {
   padding: 0; }
