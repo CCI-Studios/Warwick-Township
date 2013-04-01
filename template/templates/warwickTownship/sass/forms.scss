@@ -49,7 +49,6 @@ button.button {
 }
 
 input[type="text"] {
-	position: absolute;
 	right: 0;
 	top: 0;
 	height: 25px;
@@ -62,6 +61,10 @@ input[type="text"] {
 	box-shadow: inset 0px 0px 2px rgba(black, .25);
 	@include transition(border linear 0.2s);
 	@include transition(box-shadow linear 0.2s);
+
+	#search-form & {
+		position: absolute;
+	}
 
 	.ie7 &,
 	.ie8 & {
