@@ -5,4 +5,4 @@
  * @depends fontsizer.js
  * @depends html5.js
  * @depends script-init.js
- */
+ */;
