@@ -1,0 +1,12 @@
+.module.masthead {
+
+	body.templateColor-orange & { background-position: center top; }
+	body.templateColor-green & { background-position: center 650px; }
+	body.templateColor-yellow & { background-position: center 520px; }
+	body.templateColor-purple & { background-position: center 390px; }
+	body.templateColor-blue & { background-position: center 260px; }
+	body.templateColor-red & { background-position: center 130px; }
+
+	//for upcoming events with no menu item attached
+	&.templateColor-blue { background-position: center 260px; }
+}

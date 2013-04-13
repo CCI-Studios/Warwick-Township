@@ -1,0 +1,23 @@
+.module.slideshow {
+	height: 453px;;
+}
+
+.module.masthead {
+	body.templateColor-orange & { background-position: -140px top; }
+	body.templateColor-green & { background-position: -140px 650px; }
+	body.templateColor-yellow & { background-position: -140px 520px; }
+	body.templateColor-purple & { background-position: -140px 390px; }
+	body.templateColor-blue & { background-position: -140px 260px; }
+	body.templateColor-red & { background-position: -140px 130px; }
+
+	//for upcoming events with no menu item attached
+	&.templateColor-blue { background-position: -140px 260px; }
+
+	> div {
+		height: 129px;
+	}
+
+	h1 {
+		padding-top: 80px;
+	}
+}
