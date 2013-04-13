@@ -1082,106 +1082,105 @@ ul.category-module {
 .phone-hidden, .mobile-hidden {
   display: none; }
 
-@media only screen and (min-width: 480px) {
-  #columns #col1 {
-    float: left;
-    width: 48%;
-    margin: 0 4% 0 0; }
-  #columns #col2 {
-    float: left;
-    width: 48%; }
+#columns #col1 {
+  float: left;
+  width: 48%;
+  margin: 0 4% 0 0; }
+#columns #col2 {
+  float: left;
+  width: 48%; }
 
-  .module.slideshow h3 {
-    font-size: 35px; }
+.module.slideshow h3 {
+  font-size: 35px; }
 
-  .tablet-visible, .mobile-visible,
-  .phone-hidden, .desktop-hidden {
-    display: block; }
+.tablet-visible, .mobile-visible,
+.phone-hidden, .desktop-hidden {
+  display: block; }
 
-  .phone-visible, .desktop-visible,
-  .tablet-hidden, .mobile-hidden {
-    display: none; } }
-@media only screen and (min-width: 760px) {
-  #comp {
-    width: 81.914893617%; }
-    #comp.with-sidebar1 {
-      width: 84.042553191%; }
-    #comp.with-sidebar2 {
-      width: 74.468085106%;
-      padding-left: 0; }
-    #comp.with-sidebar1.with-sidebar2 {
-      width: 55.319148936%;
-      margin-left: 2.127659574%; }
+.phone-visible, .desktop-visible,
+.tablet-hidden, .mobile-hidden {
+  display: none; }
 
-  #sidebar2 {
-    width: 23.404255319%; }
+#comp {
+  width: 81.914893617%; }
+  #comp.with-sidebar1 {
+    width: 84.042553191%; }
+  #comp.with-sidebar2 {
+    width: 74.468085106%;
+    padding-left: 0; }
+  #comp.with-sidebar1.with-sidebar2 {
+    width: 55.319148936%;
+    margin-left: 2.127659574%; }
 
-  #columns {
+#sidebar2 {
+  width: 23.404255319%; }
+
+#columns {
+  padding-left: 15.957446809%; }
+  .home #columns {
     padding-left: 15.957446809%; }
-    .home #columns {
-      padding-left: 15.957446809%; }
 
-  #bottom {
-    padding-left: 18.085106383%; }
-    .home #bottom {
-      padding-left: 15.957446809%; }
+#bottom {
+  padding-left: 18.085106383%; }
+  .home #bottom {
+    padding-left: 15.957446809%; }
 
-  .module.slideshow {
-    height: 453px; }
+.module.slideshow {
+  height: 453px; }
 
-  body.templateColor-orange .module.masthead {
-    background-position: -140px top; }
-  body.templateColor-green .module.masthead {
-    background-position: -140px 650px; }
-  body.templateColor-yellow .module.masthead {
-    background-position: -140px 520px; }
-  body.templateColor-purple .module.masthead {
-    background-position: -140px 390px; }
-  body.templateColor-blue .module.masthead {
-    background-position: -140px 260px; }
-  body.templateColor-red .module.masthead {
-    background-position: -140px 130px; }
-  .module.masthead.templateColor-blue {
-    background-position: -140px 260px; }
-  .module.masthead > div {
-    height: 129px; }
-  .module.masthead h1 {
-    padding-top: 80px; }
+body.templateColor-orange .module.masthead {
+  background-position: -140px top; }
+body.templateColor-green .module.masthead {
+  background-position: -140px 650px; }
+body.templateColor-yellow .module.masthead {
+  background-position: -140px 520px; }
+body.templateColor-purple .module.masthead {
+  background-position: -140px 390px; }
+body.templateColor-blue .module.masthead {
+  background-position: -140px 260px; }
+body.templateColor-red .module.masthead {
+  background-position: -140px 130px; }
+.module.masthead.templateColor-blue {
+  background-position: -140px 260px; }
+.module.masthead > div {
+  height: 129px; }
+.module.masthead h1 {
+  padding-top: 80px; }
 
-  .tablet-visible, .mobile-visible,
-  .desktop-visible, .phone-hidden {
-    display: block; }
+.tablet-visible, .mobile-visible,
+.desktop-visible, .phone-hidden {
+  display: block; }
 
-  .phone-visible, .tablet-hidden
-  .mobile-hidden, .desktop-hidden {
-    display: none; } }
-@media only screen and (min-width: 960px) {
-  #wrapper {
-    min-width: 960px; }
+.phone-visible, .tablet-hidden
+.mobile-hidden, .desktop-hidden {
+  display: none; }
 
-  .container {
-    width: 960px;
-    padding: 0 10px; }
+#wrapper {
+  min-width: 960px; }
 
-  body.templateColor-orange .module.masthead {
-    background-position: center top; }
-  body.templateColor-green .module.masthead {
-    background-position: center 650px; }
-  body.templateColor-yellow .module.masthead {
-    background-position: center 520px; }
-  body.templateColor-purple .module.masthead {
-    background-position: center 390px; }
-  body.templateColor-blue .module.masthead {
-    background-position: center 260px; }
-  body.templateColor-red .module.masthead {
-    background-position: center 130px; }
-  .module.masthead.templateColor-blue {
-    background-position: center 260px; }
+.container {
+  width: 960px;
+  padding: 0 10px; }
 
-  .desktop-visible, .phone-hidden,
-  .tablet-hidden, .mobile-hidden {
-    display: block; }
+body.templateColor-orange .module.masthead {
+  background-position: center top; }
+body.templateColor-green .module.masthead {
+  background-position: center 650px; }
+body.templateColor-yellow .module.masthead {
+  background-position: center 520px; }
+body.templateColor-purple .module.masthead {
+  background-position: center 390px; }
+body.templateColor-blue .module.masthead {
+  background-position: center 260px; }
+body.templateColor-red .module.masthead {
+  background-position: center 130px; }
+.module.masthead.templateColor-blue {
+  background-position: center 260px; }
 
-  .phone-visible, .tablet-visible,
-  .mobile-visible, .desktop-hidden {
-    display: none; } }
+.desktop-visible, .phone-hidden,
+.tablet-hidden, .mobile-hidden {
+  display: block; }
+
+.phone-visible, .tablet-visible,
+.mobile-visible, .desktop-hidden {
+  display: none; }
