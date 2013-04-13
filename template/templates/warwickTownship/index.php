@@ -135,11 +135,11 @@ $color = $this->params->get('templatecolor', 'green');
 			<jdoc:include type="modules" name="footer" style="xhtml" />
 		</div></div></div>
 		
-		<div id="copyright">
+		<div id="copyright"><div class="container">
 			<jdoc:include type="modules" name="copyright" style="xhtml" />
 			<div>&copy; <?php echo date('Y') ?> Warwick Township. All Rights Reserved.<br>
 				Site by <a href="http://ccistudios.com" target="_blank">CCI Studios</a></div>
-		</div>
+		</div></div>
 		
 	</div>
 
