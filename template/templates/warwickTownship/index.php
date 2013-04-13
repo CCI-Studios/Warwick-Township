@@ -149,6 +149,7 @@ $color = $this->params->get('templatecolor', 'green');
 
 	<!-- load scripts -->
 	<?php if ($testing): ?>
+		<script src="/templates/<?= $this->template ?>/js/menu.js"></script>
 		<script src="/templates/<?= $this->template ?>/js/columns.js"></script>
 		<script src="/templates/<?= $this->template ?>/js/dropmenu.js"></script>
 		<script src="/templates/<?= $this->template ?>/js/html5.js"></script>
