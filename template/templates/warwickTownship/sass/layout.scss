@@ -4,19 +4,51 @@
 /* layout */
 
 .container {
-	width: 940px;
-	padding: 0 10px;
+	width: 100%;
+	padding: 0 2.5%;
 	margin: 0 auto;
 }
 
-#wrapper {
-	min-width: 960px;
+#headerTop {
+	padding: 10px;
+	position: relative;
+	min-height: 45px;
 }
 
-#headerTop {
-	padding: 10px 0;
+#menu {
 	position: relative;
-	min-height: 25px;
+	font-size: 13px;
+	font-weight: bold;
+	width: 100%;
+	border-top: 1px solid #fff;
+	padding: 0 0 12px 0;
+	background: url("../images/bg_menuShadow.png") bottom center no-repeat;
+	z-index: 3;
+
+	.ie7 & {
+		padding-bottom: 0;
+	}
+	
+	> div {
+		background-color: white;
+		border-top: 3px solid black;
+		min-height: 79px;
+		
+		body.templateColor-orange & { border-top: 3px solid $government; }
+		body.templateColor-green & { border-top: 3px solid $business; }
+		body.templateColor-yellow & { border-top: 3px solid $living; }
+		body.templateColor-purple & { border-top: 3px solid $visiting; }
+		body.templateColor-blue & { border-top: 3px solid $news; }
+		body.templateColor-red & { border-top: 3px solid $emergency; }
+	}
+	
+	> div > div {
+		position: relative;
+		width: 100%;
+		max-width: 960px;
+		padding: 0 10px;
+		margin: 0 auto;
+	}
 }
 
 #header {
@@ -28,13 +60,16 @@
 }
 
 #main {
-	margin: 2em auto;
+	padding-top: 2em;
+	position: relative;
+	z-index: 5;
+	background-color: #ffffff;
 }
 
 #sidebar1 {
 	float: left;
-	width: 140px;
-	padding: 0 10px 0 0;
+	width: 15.957446809%; //150px
+	padding: 0 1.041666667% 0 0; //10px
 }
 
 #top {
@@ -45,62 +80,30 @@
 
 #comp {
 	float: left;
-	width: 770px;
+	width: 100%;
 	padding: 0 0 2em 0;
-
-	&.with-sidebar1 {
-		width: 790px;
-	}
-
-	&.with-sidebar2 {
-		width: 700px;
-		padding-left: 0;
-	}
-
-	&.with-sidebar1.with-sidebar2 {
-		width: 530px;
-		padding-left: 20px;
-	}
 }
 
 .without-sidebar1.with-sidebar2 {
-	width: 670px;
+	width: 71.276595745%; //670px
 }
 
 #columns {
-	float: left;
-	margin-left: 150px;
-	
-	#col1 {
-		float: left;
-		width: 370px;
-		padding: 0 40px 0 0;
-	}
-
-	#col2 {
-		float: left;
-		width: 370px;
-	}
-
-	.home & {
-		margin-left: 150px;
-	}
+	width: 100%;
 }
 
 #sidebar2 {
 	float: right;
-	width: 220px;
-	padding: 0 0 0 20px;
+	width: 100%;
+	margin: 0 0 0 2.127659574%; //20px
 }
 
 #bottom {
 	float: left;
-	width: 770px;
-	margin: 2em 0 0 170px;
-
-	.home & {
-		margin-left: 150px;
-	}
+	width: 100%;
+	margin: 2em 0 0 0;
+	position: relative;
+	overflow: hidden; //for gallery h3 bottom-border
 }
 
 #footer {

@@ -1,0 +1,37 @@
+#comp {
+	width: 81.914893617%; //770px
+
+	&.with-sidebar1 {
+		width: 84.042553191%; //790px
+	}
+
+	&.with-sidebar2 {
+		width: 74.468085106%; //700px
+		padding-left: 0;
+	}
+
+	&.with-sidebar1.with-sidebar2 {
+		width: 55.319148936%; //520px
+		margin-left: 2.127659574%; //20px
+	}
+}
+
+#sidebar2 {
+	width: 23.404255319%; //220px
+}
+
+#columns {
+	padding-left: 15.957446809%; //150px
+	
+	.home & {
+		padding-left: 15.957446809%; //150px
+	}
+}
+
+#bottom {
+	padding-left: 18.085106383%; //170px
+
+	.home & {
+		padding-left: 15.957446809%; //150px
+	}
+}
