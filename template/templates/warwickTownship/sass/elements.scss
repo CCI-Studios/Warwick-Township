@@ -8,6 +8,16 @@ body, select, input, textarea {
 	font-size: 12px;
 }
 
+* { 
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+
+	// FIXME: Change this to the right path
+	*behavior: url(/templates/warwickTownship/resources/boxsizing.htc); // IE7 only
+}
+
 /* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
 h1, h2, h3, h4, h5, h6 { 
 	font-family: "Helvetica CY", Helvetica, Arial, sans-serif;
