@@ -32,7 +32,8 @@
 	> div {
 		background-color: white;
 		border-top: 3px solid black;
-		min-height: 79px;
+		min-height: 49px;
+		@include transition(min-height .2s ease-in);
 		
 		body.templateColor-orange & { border-top: 3px solid $government; }
 		body.templateColor-green & { border-top: 3px solid $business; }
