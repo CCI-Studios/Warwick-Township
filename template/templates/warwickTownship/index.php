@@ -84,9 +84,9 @@ $color = $this->params->get('templatecolor', 'green');
 
 		<div class="clear"></div>
 		
-		<div id="main" class="container">
+		<div id="main"><div class="container">
 			<?php if ($this->countModules('sidebar1')): ?>
-			<div id="sidebar1" class="desktop-visible">
+			<div id="sidebar1">
 				<jdoc:include type="modules" name="sidebar1" style="xhtml" />
 			</div>
 			<?php endif; ?>
@@ -129,7 +129,7 @@ $color = $this->params->get('templatecolor', 'green');
 			</div>
 			<?php endif; ?>
 			<div class="clear"></div>
-		</div>
+		</div></div>
 		
 		<div id="footer"><div><div class="container">
 			<jdoc:include type="modules" name="footer" style="xhtml" />
