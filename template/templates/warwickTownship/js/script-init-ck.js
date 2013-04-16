@@ -1,0 +1,1 @@
+window.addEvent("domready",function(){new CCI.Rollover("img.rollover")});window.addEvent("load",function(){});

@@ -1,9 +1,9 @@
 window.addEvent('domready', function() {
 	var displayers = $$('.show-menu'),
-		menu = $$('.mobile-menu')[0],
+		menu = $$('.mobile-menu-primary')[0],
 		menuContainer = $('.menu'),
 		resize = function() {
-			menu.setStyle('max-height', menu.getElement('ul').getSize().y);
+			//menu.setStyle('max-height', menu.getElement('ul').getSize().y);
 		};
 
 
