@@ -1,4 +1,12 @@
+.module.show-menu {
+	line-height: 79px;
+}
+
 .module.slideshow {
+
+	> div > div {
+		padding-top: 18px;
+	}
 
 	h3 {
 		font-size: 35px;
