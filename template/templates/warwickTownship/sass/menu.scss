@@ -115,31 +115,55 @@
 .moduletable_vmenu.inner {
 	font-size: 14px;
 	font-weight: bold;
+
+	.menu {
+		text-align: center;
+	}
 	
 	li {
-		padding: 0 0 1em 10px;
-		
-		a:hover {
+		padding: 0 2px 1.5em;
+		display: inline-block;
+		*display: inline;
+		*zoom: 1;
+
+		a {
+			padding: 8px 5px;
+			border: 1px solid rgba(black, .2);
+			border-radius: 3px;
+			background-color: rgba(0, 0, 0, .85);
+			box-shadow: rgba(255, 255, 255, 0.2) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.0470588) 0px 1px 2px 0px;
 			text-decoration: none;
-			body.templateColor-orange & { color: $government; }
-			body.templateColor-green & { color: $business; }
-			body.templateColor-yellow & { color: $living; }
-			body.templateColor-purple & { color: $visiting; }
-			body.templateColor-blue & { color: $news; }
-			body.templateColor-red & { color: $emergency; }
+			color: #ffffff;
+			text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+			body.templateColor-orange & { background-color: rgba($government, .85); }
+			body.templateColor-green & { background-color: rgba($business, .85); }
+			body.templateColor-yellow & { background-color: rgba($living, .85); }
+			body.templateColor-purple & { background-color: rgba($visiting, .85); }
+			body.templateColor-blue & { background-color: rgba($news, .85); }
+			body.templateColor-red & { background-color: rgba($emergency, .85); }
+		}
+
+		a:hover {
+			body.templateColor-orange & { background-color: $government; }
+			body.templateColor-green & { background-color: $business; }
+			body.templateColor-yellow & { background-color: $living; }
+			body.templateColor-purple & { background-color: $visiting; }
+			body.templateColor-blue & { background-color: $news; }
+			body.templateColor-red & { background-color: $emergency; }
 		}
 	}
 }
 
 // mobile-menu
 
-.mobile-menu {
+.module_vmenu.mobile-menu-primary {
 	max-height: 800px;
 	overflow: visible;
 	@include transition(max-height .3s ease-in-out);
 	position: relative;
 	z-index: 4;
 	margin: 0 -10px;
+	border-top: 3px solid black;
 	body.templateColor-orange & { border-top: 3px solid $government; }
 	body.templateColor-green & { border-top: 3px solid $business; }
 	body.templateColor-yellow & { border-top: 3px solid $living; }
@@ -165,13 +189,11 @@
 	}
 
 	li {
-		width: 50%;
-		display: inline-block;
-		*display: inline;
-		*zoom: 1;
-
+		float: left;
+		width: 100%;
 		text-align: center;
 		background-color: whitesmoke;
+		list-style: none;
 		
 
 		&:hover {
@@ -205,8 +227,6 @@
 			color: #ffffff;
 			text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 			box-shadow: rgba(0, 0, 0, 0.2) 8px 0px 25px 2px;
-
-
 
 			&:hover {
 				text-decoration: none;

@@ -1,0 +1,30 @@
+.moduletable_vmenu.inner {
+	font-size: 14px;
+	font-weight: bold;
+
+	.menu {
+		text-align: left;
+	}
+	
+	li {
+		padding: 0 0 1em 10px;
+		
+		a {
+			padding: 0px;
+			border: none;
+			background: none !important; //override
+			color: #000;
+			text-shadow: none;
+		}
+
+		a:hover {
+			text-decoration: none;
+			body.templateColor-orange & { color: $government; }
+			body.templateColor-green & { color: $business; }
+			body.templateColor-yellow & { color: $living; }
+			body.templateColor-purple & { color: $visiting; }
+			body.templateColor-blue & { color: $news; }
+			body.templateColor-red & { color: $emergency; }
+		}
+	}
+}
