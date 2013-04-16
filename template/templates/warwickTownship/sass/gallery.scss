@@ -5,10 +5,10 @@
 
 .mosaic,
 .phocagallery-box-file-first {
-	margin: 0px 20px;
+	margin: 0px 20px !important; //override
 
 	&:first-child {
-		margin-left: 0;
+		margin-left: 0 !important; //override
 	}
 
 	img {
@@ -21,12 +21,14 @@
 
 #phocagallery .pg-name {
 	margin: 0;
+	width: 206px;
 }
 
 // bottom gallery module
 
 .moduletable.gallery {
 	overflow-x: scroll;
+	-webkit-overflow-scrolling: touch;
 
 	> h3 {
 		position: absolute;
@@ -47,6 +49,14 @@
 
 // gallery page
 
+#phocagallery {
+	text-align: center;
+}
+
 .phocagallery-box-file {
+	float: none !important; //override
 	margin-bottom: 5px;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
 }
