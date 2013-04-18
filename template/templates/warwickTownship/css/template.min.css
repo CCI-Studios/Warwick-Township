@@ -546,9 +546,9 @@ input[type="text"] {
   margin: 0 auto; }
 
 #headerTop {
-  padding: 10px;
+  padding: 10px 0;
   position: relative;
-  min-height: 45px; }
+  height: 45px; }
 
 #menu {
   position: relative;
@@ -720,55 +720,16 @@ div.pagination ul {
   -ms-transition: line-height 0.2s ease-in;
   transition: line-height 0.2s ease-in; }
 
-.module.slideshow {
-  background: url("../images/bg_slideshow1.jpg") top center no-repeat;
-  height: 330px;
-  margin: -149px 0 0 0;
-  position: relative;
-  -webkit-transition: height 0.2s ease-in;
-  -moz-transition: height 0.2s ease-in;
-  -o-transition: height 0.2s ease-in;
-  -ms-transition: height 0.2s ease-in;
-  transition: height 0.2s ease-in; }
-  .module.slideshow > div {
-    position: absolute;
-    width: 100%;
-    background: url("../images/bg_slideshowShadow.png") bottom center no-repeat;
-    padding-bottom: 9px;
-    bottom: -9px; }
-  .module.slideshow > div > div {
-    background: url("../images/bg_slideshow.png") bottom center repeat-x;
-    padding: 10px 0 1px;
-    -webkit-transition: padding 0.2s ease-in;
-    -moz-transition: padding 0.2s ease-in;
-    -o-transition: padding 0.2s ease-in;
-    -ms-transition: padding 0.2s ease-in;
-    transition: padding 0.2s ease-in; }
-  .module.slideshow > div > div > div {
-    width: 100%;
-    padding: 0 10px;
-    margin: 0 auto;
-    max-width: 960px; }
-  .module.slideshow h3 {
-    font-size: 24px;
-    margin: 0;
-    border: none;
-    -webkit-transition: font-size 0.2s ease-in;
-    -moz-transition: font-size 0.2s ease-in;
-    -o-transition: font-size 0.2s ease-in;
-    -ms-transition: font-size 0.2s ease-in;
-    transition: font-size 0.2s ease-in; }
-
 .module.masthead {
   margin: -9px 0 0 0;
   width: 100%;
   position: relative;
   background: url("../images/bg_masthead.jpg") -140px -40px;
-  -webkit-transition: background-position 0.2s ease-in;
-  -moz-transition: background-position 0.2s ease-in;
-  -o-transition: background-position 0.2s ease-in;
-  -ms-transition: background-position 0.2s ease-in;
-  transition: background-position 0.2s ease-in; }
+  -webkit-transition: background-position 0.1s ease-in;
+  -moz-transition: background-position 0.1s ease-in;
+  -o-transition: background-position 0.1s ease-in;
+  -ms-transition: background-position 0.1s ease-in;
+  transition: background-position 0.1s ease-in; }
   body.templateColor-orange .module.masthead {
     background-position: -140px -40px; }
   body.templateColor-green .module.masthead {
@@ -789,11 +750,11 @@ div.pagination ul {
     margin: 0 auto;
     height: 89px;
     background: url("../images/bg_mastheadShadow.jpg") bottom center no-repeat;
-    -webkit-transition: height 0.2s ease-in;
-    -moz-transition: height 0.2s ease-in;
-    -o-transition: height 0.2s ease-in;
-    -ms-transition: height 0.2s ease-in;
-    transition: height 0.2s ease-in; }
+    -webkit-transition: height 0.1s ease-in;
+    -moz-transition: height 0.1s ease-in;
+    -o-transition: height 0.1s ease-in;
+    -ms-transition: height 0.1s ease-in;
+    transition: height 0.1s ease-in; }
   .module.masthead h1 {
     font-size: 18px;
     color: #FFF;
@@ -1070,6 +1031,45 @@ ul.category-module {
   margin-bottom: 3px;
   box-shadow: 0px 8px 6px -7px rgba(0, 0, 0, 0.7); }
 
+.module.slideshow {
+  background: url("../images/bg_slideshow1.jpg") top center no-repeat;
+  height: 330px;
+  margin: -159px 0 0 0;
+  position: relative;
+  -webkit-transition: height 0.2s ease-in;
+  -moz-transition: height 0.2s ease-in;
+  -o-transition: height 0.2s ease-in;
+  -ms-transition: height 0.2s ease-in;
+  transition: height 0.2s ease-in; }
+  .module.slideshow > div {
+    position: absolute;
+    width: 100%;
+    background: url("../images/bg_slideshowShadow.png") bottom center no-repeat;
+    padding-bottom: 9px;
+    bottom: -9px; }
+  .module.slideshow > div > div {
+    background: url("../images/bg_slideshow.png") bottom center repeat-x;
+    padding: 10px 0 1px;
+    -webkit-transition: padding 0.2s ease-in;
+    -moz-transition: padding 0.2s ease-in;
+    -o-transition: padding 0.2s ease-in;
+    -ms-transition: padding 0.2s ease-in;
+    transition: padding 0.2s ease-in; }
+  .module.slideshow > div > div > div {
+    width: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+    max-width: 960px; }
+  .module.slideshow h3 {
+    font-size: 24px;
+    margin: 0;
+    border: none;
+    -webkit-transition: font-size 0.2s ease-in;
+    -moz-transition: font-size 0.2s ease-in;
+    -o-transition: font-size 0.2s ease-in;
+    -ms-transition: font-size 0.2s ease-in;
+    transition: font-size 0.2s ease-in; }
+
 .mosaic,
 .phocagallery-box-file-first {
   margin: 0px 20px !important; }
@@ -1095,12 +1095,9 @@ ul.category-module {
     width: 100%; }
 
 #phocagallery-module-ri {
-  overflow-x: scroll;
-  -webkit-overflow-scrolling: touch; }
-  #phocagallery-module-ri > *:first-child {
-    width: 5170px;
-    margin-top: 3.3em !important;
-    overflow-x: hidden; }
+  width: 5170px;
+  margin-top: 3.3em;
+  overflow-x: hidden; }
   .ie7 #phocagallery-module-ri {
     display: inline;
     *zoom: 1; }
@@ -1147,12 +1144,7 @@ ul.category-module {
   .module.show-menu {
     line-height: 79px; }
 
-  .module.slideshow > div > div {
-    padding-top: 18px; }
-  .module.slideshow h3 {
-    font-size: 35px; }
-
-  .mobile-menu li {
+  .module_vmenu.mobile-menu-primary li {
     width: 50%; }
 
   .tablet-visible, .mobile-visible,
@@ -1161,7 +1153,12 @@ ul.category-module {
 
   .phone-visible, .desktop-visible,
   .tablet-hidden, .mobile-hidden {
-    display: none; } }
+    display: none; }
+
+  .module.slideshow > div > div {
+    padding-top: 18px; }
+  .module.slideshow h3 {
+    font-size: 35px; } }
 @media only screen and (min-width: 760px) {
   #sidebar1 {
     width: 15.957446809%;
@@ -1190,9 +1187,6 @@ ul.category-module {
     padding-left: 18.085106383%; }
     .home #bottom {
       padding-left: 15.957446809%; }
-
-  .module.slideshow {
-    height: 453px; }
 
   .module.masthead {
     background-position: -140px top; }
@@ -1227,7 +1221,8 @@ ul.category-module {
         border: none;
         background: none !important;
         color: #000;
-        text-shadow: none; }
+        text-shadow: none;
+        box-shadow: none; }
       .moduletable_vmenu.inner li a:hover {
         text-decoration: none; }
         body.templateColor-orange .moduletable_vmenu.inner li a:hover {
@@ -1250,6 +1245,9 @@ ul.category-module {
   .phone-visible, .tablet-hidden
   .mobile-hidden, .desktop-hidden {
     display: none; }
+
+  .module.slideshow {
+    height: 453px; }
 
   #phocagallery {
     text-align: left; } }
