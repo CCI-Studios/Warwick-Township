@@ -37,14 +37,9 @@
 }
 
 #phocagallery-module-ri {
-	overflow-x: scroll;
-	-webkit-overflow-scrolling: touch;
-
-	> *:first-child {
-		width: 5170px;
-		margin-top: 3.3em !important;
-		overflow-x: hidden;
-	}
+	width: 5170px;
+	margin-top: 3.3em;
+	overflow-x: hidden;
 
 	.ie7 & {
 		display: inline;
