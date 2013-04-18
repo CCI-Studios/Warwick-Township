@@ -616,7 +616,8 @@ input[type="text"] {
   width: 71.276595745%; }
 
 #columns {
-  width: 100%; }
+  width: 100%;
+  float: left; }
 
 #sidebar2 {
   float: right;
@@ -1094,9 +1095,12 @@ ul.category-module {
     width: 100%; }
 
 #phocagallery-module-ri {
-  width: 5170px;
-  margin-top: 3.3em;
-  overflow: hidden; }
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch; }
+  #phocagallery-module-ri > *:first-child {
+    width: 5170px;
+    margin-top: 3.3em !important;
+    overflow-x: hidden; }
   .ie7 #phocagallery-module-ri {
     display: inline;
     *zoom: 1; }
