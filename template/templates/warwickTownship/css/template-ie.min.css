@@ -430,8 +430,6 @@ h4 {
 img {
   max-width: 100%;
   height: auto; }
-  .ie8 img {
-    width: auto; }
 
 a, a:active, a:visited {
   color: #000;
@@ -534,6 +532,8 @@ input[type="text"] {
     position: absolute; }
   .ie7 input[type="text"], .ie8 input[type="text"] {
     line-height: 25px; }
+  .ie7 input[type="text"] {
+    min-width: 130px; }
   input[type="text"]:focus {
     outline: 0;
     border-color: rgba(82, 168, 236, 0.8);
@@ -548,7 +548,8 @@ input[type="text"] {
 #headerTop {
   padding: 10px 0;
   position: relative;
-  height: 45px; }
+  height: 45px;
+  z-index: 3; }
 
 #menu {
   position: relative;
@@ -558,7 +559,8 @@ input[type="text"] {
   border-top: 1px solid white;
   padding: 0 0 9px 0;
   background: url("../images/bg_menuShadow.png") bottom center no-repeat;
-  z-index: 3; }
+  z-index: 3;
+  clear: both; }
   .ie7 #menu {
     padding-bottom: 0; }
   #menu > div {
@@ -621,8 +623,7 @@ input[type="text"] {
 
 #sidebar2 {
   float: right;
-  width: 100%;
-  margin: 0 0 0 2.12766%; }
+  width: 100%; }
 
 #bottom {
   float: left;
@@ -699,6 +700,9 @@ div.pagination ul {
   .module.fontResizer .smaller {
     font-size: 14px; }
 
+.ie8 .module.socialLink img {
+  min-width: 27px; }
+
 .module.search form {
   position: relative; }
 
@@ -742,6 +746,8 @@ div.pagination ul {
     background-position: -140px 220px; }
   body.templateColor-red .module.masthead {
     background-position: -140px 90px; }
+  .ie7 .module.masthead {
+    margin-top: 0; }
   .module.masthead.templateColor-blue {
     background-position: -140px 220px; }
   .module.masthead > div {
@@ -785,7 +791,8 @@ ul.category-module {
     ul.category-module li h4 {
       font-weight: bold;
       margin: 0;
-      padding: 1em 0 0 0; }
+      padding: 1em 0 0 0;
+      word-wrap: break-word; }
     ul.category-module li p {
       margin: 0; }
 
@@ -1081,11 +1088,14 @@ ul.category-module {
     border-radius: 10px;
     border: none !important;
     box-shadow: 0px 12px 12px -12px #898887 !important;
-    margin-bottom: 10px !important; }
+    margin-bottom: 10px !important;
+    max-width: none; }
 
 #phocagallery .pg-name {
   margin: 0;
   width: 206px; }
+  .ie7 #phocagallery .pg-name {
+    margin-right: 20px; }
 
 .moduletable.gallery {
   overflow-x: scroll;
@@ -1175,7 +1185,8 @@ ul.category-module {
     margin-left: 2.127659574%; }
 
 #sidebar2 {
-  width: 23.404255319%; }
+  width: 25.531914893%;
+  padding: 0 0 0 2.12766%; }
 
 #columns {
   padding-left: 15.957446809%; }
