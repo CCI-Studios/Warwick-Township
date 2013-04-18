@@ -16,12 +16,17 @@
 		border: none !important;
 		box-shadow: 0px 12px 12px -12px #898887 !important;
 		margin-bottom: 10px !important;
+		max-width: none; //fixes ie7 issue
 	}
 }
 
 #phocagallery .pg-name {
 	margin: 0;
 	width: 206px;
+
+	.ie7 & {
+		margin-right: 20px;
+	}
 }
 
 // bottom gallery module
