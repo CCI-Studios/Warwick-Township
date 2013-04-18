@@ -71,6 +71,10 @@ input[type="text"] {
 		line-height: 25px;
 	}
 
+	.ie7 & {
+		min-width: 130px;
+	}
+
 	&:focus {
 		outline: 0;
 		border-color: rgba(82, 168, 236, 0.8);
