@@ -72,9 +72,9 @@ $color = $this->params->get('templatecolor', 'green');
 
 	<div id="wrapper">
 		<div id="header">
-			<div id="headerTop" class="container">
+			<div id="headerTop"><div class="container">
 				<jdoc:include type="modules" name="headerTop" style="rounded" />
-			</div>
+			</div></div>
 			<div id="menu"><div><div>
 				<jdoc:include type="modules" name="menu" style="rounded" />
 			</div></div></div>
