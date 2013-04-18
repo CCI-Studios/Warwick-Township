@@ -27,6 +27,15 @@
 	}
 }
 
+.module.socialLink {
+	 
+	 .ie8 & {
+		 img {
+		 	min-width: 27px; //bug fix
+		 }
+	 }
+}
+
 .module.search {
 	form {
 		position: relative;
