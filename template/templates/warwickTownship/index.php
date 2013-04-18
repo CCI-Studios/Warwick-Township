@@ -106,6 +106,11 @@ $color = $this->params->get('templatecolor', 'green');
 					?>">
 				<jdoc:include type="component" />
 			</div>
+			<?php if ($this->countModules('sidebar2')): ?>
+			<div id="sidebar2">
+				<jdoc:include type="modules" name="sidebar2" style="xhtml" />
+			</div>
+			<?php endif; ?>
 			<div id="columns">
 				<?php if ($this->countModules('col1')): ?>
 				<div id="col1">
@@ -118,11 +123,6 @@ $color = $this->params->get('templatecolor', 'green');
 				</div>
 				<?php endif; ?>
 			</div>
-			<?php if ($this->countModules('sidebar2')): ?>
-			<div id="sidebar2">
-				<jdoc:include type="modules" name="sidebar2" style="xhtml" />
-			</div>
-			<?php endif; ?>
 			<?php if ($this->countModules('bottom')): ?>
 			<div id="bottom">
 				<jdoc:include type="modules" name="bottom" style="xhtml" />
