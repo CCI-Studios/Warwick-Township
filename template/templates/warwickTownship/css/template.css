@@ -874,7 +874,7 @@ ul.category-module {
   .moduletable_vmenu.home span {
     display: block;
     margin: -5px 0 1em 0;
-    padding: 0 15px; }
+    padding: 0 5px; }
 
 .moduletable_vmenu.inner {
   font-size: 14px;
@@ -1286,6 +1286,9 @@ ul.category-module {
       background-position: center 130px; }
     .module.masthead.templateColor-blue {
       background-position: center 260px; }
+
+  .moduletable_vmenu.home span {
+    padding: 0 15px; }
 
   .desktop-visible, .phone-hidden,
   .tablet-hidden, .mobile-hidden {
