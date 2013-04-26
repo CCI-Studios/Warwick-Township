@@ -22,7 +22,6 @@ body, select, input, textarea {
 h1, h2, h3, h4, h5, h6 { 
 	font-family: "Helvetica CY", Helvetica, Arial, sans-serif;
 	font-weight: normal;
-	text-transform: uppercase;
 	body.templateColor-orange & { color: $government; }
 	body.templateColor-green & { color: $business; }
 	body.templateColor-yellow & { color: $living; }
@@ -32,21 +31,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size: 22px;
+	font-size: 24px;
 	border-bottom: 1px solid $underline;
 	padding: 0 0 5px 0;
 	margin-top: 0;
 }
 
 h2 {
-	font-size: 18px;
-	margin-top: 1.7em;
-	text-decoration: underline; 
+	font-size: 20px;
+	margin: 1.5em 0 1em;
+	text-decoration: underline;
+
+	&:first-child {
+		margin-top: 0;
+	}
 }
 
 h3 {
-	margin: 1.7em 0 0;
-	font-size: 16px;
+	margin: 1em 0;
+	font-size: 18px;
 
 	+ h4,
 	+ p {
@@ -55,7 +58,7 @@ h3 {
 }
 
 h4 {
-	font-size: 14px;
+	font-size: 16px;
 	margin-bottom: 0;
 
 	+ p {
@@ -65,8 +68,7 @@ h4 {
 
 .module h3,
 .moduletable h3 {
-	font-size: 22px;
-	text-transform: uppercase;
+	font-size: 24px;
 	border-bottom: 1px solid $underline;
 	padding: 0 0 5px 0;
 	margin: 0;
