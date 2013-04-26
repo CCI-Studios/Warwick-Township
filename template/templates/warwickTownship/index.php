@@ -137,8 +137,7 @@ $color = $this->params->get('templatecolor', 'green');
 		
 		<div id="copyright"><div class="container">
 			<jdoc:include type="modules" name="copyright" style="xhtml" />
-			<div>&copy; <?php echo date('Y') ?> Warwick Township. All Rights Reserved.<br>
-				Site by <a href="http://ccistudios.com" target="_blank">CCI Studios</a></div>
+			<div>&copy; <?php echo date('Y') ?> Warwick Township. All Rights Reserved.</div>
 		</div></div>
 		
 	</div>
