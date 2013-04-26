@@ -3,6 +3,10 @@
 	padding-bottom: 0;
 }
 
+#main {
+	padding: 2em 0;
+}
+
 #comp {
 	width: 81.914893617%; //770px
 
@@ -38,6 +42,7 @@
 	padding-left: 18.085106383%; //170px
 
 	.home & {
-		padding-left: 15.957446809%; //150px
+		padding-left: 0; //was 150px or 15.957446809%
+		width: 84.042553191%;
 	}
 }
