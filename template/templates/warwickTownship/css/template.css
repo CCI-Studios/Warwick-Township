@@ -380,8 +380,7 @@ body, select, input, textarea {
 /* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Helvetica CY", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  text-transform: uppercase; }
+  font-weight: normal; }
   body.templateColor-orange h1, body.templateColor-orange h2, body.templateColor-orange h3, body.templateColor-orange h4, body.templateColor-orange h5, body.templateColor-orange h6 {
     color: #cb6a02; }
   body.templateColor-green h1, body.templateColor-green h2, body.templateColor-green h3, body.templateColor-green h4, body.templateColor-green h5, body.templateColor-green h6 {
@@ -396,33 +395,34 @@ h1, h2, h3, h4, h5, h6 {
     color: #a2191c; }
 
 h1 {
-  font-size: 22px;
+  font-size: 24px;
   border-bottom: 1px solid #ebebeb;
   padding: 0 0 5px 0;
   margin-top: 0; }
 
 h2 {
-  font-size: 18px;
-  margin-top: 1.7em;
+  font-size: 20px;
+  margin: 1.5em 0 1em;
   text-decoration: underline; }
+  h2:first-child {
+    margin-top: 0; }
 
 h3 {
-  margin: 1.7em 0 0;
-  font-size: 16px; }
+  margin: 1em 0;
+  font-size: 18px; }
   h3 + h4,
   h3 + p {
     margin-top: .7em; }
 
 h4 {
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 0; }
   h4 + p {
     margin-top: 0; }
 
 .module h3,
 .moduletable h3 {
-  font-size: 22px;
-  text-transform: uppercase;
+  font-size: 24px;
   border-bottom: 1px solid #ebebeb;
   padding: 0 0 5px 0;
   margin: 0; }
@@ -595,7 +595,7 @@ input[type="text"] {
   position: relative; }
 
 #main {
-  padding: 2em 0;
+  padding: 1em 0;
   position: relative;
   z-index: 5;
   background-color: #ffffff; }
@@ -618,15 +618,19 @@ input[type="text"] {
   width: 71.276595745%; }
 
 #columns {
+  width: 100%; }
+
+#col1,
+#col2 {
   width: 100%;
-  float: left; }
+  float: left;
+  margin: 0 0 1em; }
 
 #sidebar2 {
   float: right;
   width: 100%; }
 
 #bottom {
-  float: left;
   width: 100%;
   margin: 2em 0 0 0;
   position: relative;
@@ -887,7 +891,7 @@ ul.category-module {
     *display: inline;
     *zoom: 1; }
     .moduletable_vmenu.inner li a {
-      padding: 8px 5px;
+      padding: 8px 3px;
       border: 1px solid rgba(0, 0, 0, 0.2);
       border-radius: 3px;
       background-color: rgba(0, 0, 0, 0.85);
@@ -1071,6 +1075,7 @@ ul.category-module {
     font-size: 24px;
     margin: 0;
     border: none;
+    text-transform: uppercase;
     -webkit-transition: font-size 0.2s ease-in;
     -moz-transition: font-size 0.2s ease-in;
     -o-transition: font-size 0.2s ease-in;
@@ -1143,13 +1148,13 @@ ul.category-module {
   #menu > div {
     min-height: 79px; }
 
-  #columns #col1 {
-    float: left;
-    width: 48%;
-    margin: 0 4% 0 0; }
-  #columns #col2 {
+  #col1,
+  #col2 {
     float: left;
     width: 48%; }
+
+  #col1 {
+    margin: 0 4% 0 0; }
 
   .module.show-menu {
     line-height: 79px; }
@@ -1174,6 +1179,9 @@ ul.category-module {
     width: 15.957446809%;
     padding-bottom: 0; }
 
+  #main {
+    padding: 2em 0; }
+
   #comp {
     width: 81.914893617%; }
     #comp.with-sidebar1 {
@@ -1197,7 +1205,8 @@ ul.category-module {
   #bottom {
     padding-left: 18.085106383%; }
     .home #bottom {
-      padding-left: 15.957446809%; }
+      padding-left: 0;
+      width: 84.042553191%; }
 
   .module.masthead {
     background-position: -140px top; }
