@@ -156,6 +156,7 @@ $color = $this->params->get('templatecolor', 'green');
 		<script src="/templates/<?= $this->template ?>/js/lettering.js"></script>
 		<script src="/templates/<?= $this->template ?>/js/fontsizer.js"></script>
 		<script src="/templates/<?= $this->template ?>/js/rollover.js"></script>
+		<script src="/templates/<?= $this->template ?>/js/slideshow.js"></script>
 		<script src="/templates/<?= $this->template ?>/js/script-init.js"></script>
 	<?php else: ?>
 		<?php if ($analytics): ?>

@@ -2,40 +2,72 @@
 @import "_mixins";
 
 .module.slideshow {
-	background: url('../images/bg_slideshow1.jpg') top center no-repeat;
-	height: 330px;
 	margin: -159px 0 0 0;
 	position: relative;
 
 	@include transition(height .2s ease-in);
 
 	> div {
-		position: absolute;
-		width: 100%;
 		background: url('../images/bg_slideshowShadow.png') bottom center no-repeat;
 		padding-bottom: 9px;
-		bottom: -9px;
 	}
 
 	> div > div {
-		background: url('../images/bg_slideshow.png') bottom center repeat-x;
-		padding: 10px 0 1px;
 		@include transition(padding .2s ease-in);
 	}
 
 	> div > div > div {
 		width: 100%;
-		padding: 0 10px;
 		margin: 0 auto;
-		max-width: 960px;
+		position: relative;
 	}
 
 	h3 {
+		position: absolute;
+		z-index: 4;
+		bottom: 0;
+		width: 100%;
+		padding: 0.5em 0;
 		font-size: 24px;
-		margin: 0;
 		border: none;
 		text-transform: uppercase;
+		background: url('../images/bg_slideshow.png') bottom center repeat-x;
 		@include transition(font-size .2s ease-in);
+
+		span {
+			display: block;
+			max-width: 940px;
+			padding: 0 2.5%;
+			margin: 0 auto;
+		}
+	}
+
+	ul.slideshow {
+		margin: 0;
+		padding: 0;
+
+		li {
+			display: none;
+		}
+
+		li.current {
+			display: block;
+			position: relative;
+			z-index: 2;
+		}
+
+		li.other {
+			position: absolute;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			width: 100%;
+		}
+	}
+
+	img {
+		display: block;
+		min-height: 266px;
 	}
 }
 
