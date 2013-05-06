@@ -69,6 +69,7 @@ $color = $this->params->get('templatecolor', 'green');
 </head>
 
 <body class="<?= $menu ?> templateColor-<?php echo $color ?>">
+	<a href="#main-content" class="element-invisible">Skip to main content</a>
 
 	<div id="wrapper">
 		<div id="header">
@@ -105,6 +106,7 @@ $color = $this->params->get('templatecolor', 'green');
 								echo 'with-sidebar2';
 							}
 					?>">
+				<a id="main-content"></a>
 				<jdoc:include type="component" />
 			</div>
 			<?php if ($this->countModules('sidebar2')): ?>

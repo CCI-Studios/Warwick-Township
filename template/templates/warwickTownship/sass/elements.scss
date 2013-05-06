@@ -8,7 +8,7 @@ body, select, input, textarea {
 	font-size: 12px;
 }
 
-* { 
+* {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	-ms-box-sizing: border-box;
@@ -19,7 +19,7 @@ body, select, input, textarea {
 }
 
 /* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
-h1, h2, h3, h4, h5, h6 { 
+h1, h2, h3, h4, h5, h6 {
 	font-family: "Helvetica CY", Helvetica, Arial, sans-serif;
 	font-weight: normal;
 	body.templateColor-orange & { color: $government; }
@@ -94,4 +94,11 @@ a, a:active, a:visited {
 }
 a:hover {
 	text-decoration: underline;
+}
+
+.element-invisible {
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	display: block;
 }
