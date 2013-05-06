@@ -77,13 +77,14 @@ $color = $this->params->get('templatecolor', 'green');
 			</div></div>
 			<div id="menu"><div><div>
 				<jdoc:include type="modules" name="menu" style="rounded" />
+				<div class="clear"></div>
 			</div></div></div>
 			<jdoc:include type="modules" name="header" style="rounded" />
 			<div class="clear"></div>
 		</div>
 
 		<div class="clear"></div>
-		
+
 		<div id="main"><div class="container">
 			<?php if ($this->countModules('sidebar1')): ?>
 			<div id="sidebar1">
@@ -130,16 +131,16 @@ $color = $this->params->get('templatecolor', 'green');
 			<?php endif; ?>
 			<div class="clear"></div>
 		</div></div>
-		
+
 		<div id="footer"><div><div class="container">
 			<jdoc:include type="modules" name="footer" style="xhtml" />
 		</div></div></div>
-		
+
 		<div id="copyright"><div class="container">
 			<jdoc:include type="modules" name="copyright" style="xhtml" />
 			<div>&copy; <?php echo date('Y') ?> Warwick Township. All Rights Reserved.</div>
 		</div></div>
-		
+
 	</div>
 
 	<div class="hidden">

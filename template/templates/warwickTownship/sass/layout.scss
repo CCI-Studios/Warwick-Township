@@ -20,7 +20,6 @@
 	position: relative;
 	font-size: 13px;
 	font-weight: bold;
-	width: 100%;
 	border-top: 1px solid #fff;
 	padding: 0 0 9px 0;
 	background: url("../images/bg_menuShadow.png") bottom center no-repeat;
@@ -30,13 +29,13 @@
 	.ie7 & {
 		padding-bottom: 0;
 	}
-	
+
 	> div {
 		background-color: white;
 		border-top: 3px solid black;
 		min-height: 49px;
 		@include transition(min-height .2s ease-in);
-		
+
 		body.templateColor-orange & { border-top: 3px solid $government; }
 		body.templateColor-green & { border-top: 3px solid $business; }
 		body.templateColor-yellow & { border-top: 3px solid $living; }
@@ -44,10 +43,9 @@
 		body.templateColor-blue & { border-top: 3px solid $news; }
 		body.templateColor-red & { border-top: 3px solid $emergency; }
 	}
-	
+
 	> div > div {
 		position: relative;
-		width: 100%;
 		max-width: 960px;
 		padding: 0 10px;
 		margin: 0 auto;
@@ -59,7 +57,7 @@
 }
 
 #masthead {
-	
+
 }
 
 #main {
@@ -98,7 +96,7 @@
 #col2 {
 	width: 100%;
 	float: left;
-	margin: 0 0 1em; 
+	margin: 0 0 1em;
 }
 
 #sidebar2 {
@@ -122,11 +120,11 @@
 	body.templateColor-purple & { border-top: 3px solid $visiting; }
 	body.templateColor-blue & { border-top: 3px solid $news; }
 	body.templateColor-red & { border-top: 3px solid $emergency; }
-	
+
 	> div {
 		border-top: 2px solid #f6f6f6;
 		background-color: #eaeaea;
-	}	
+	}
 }
 
 #copyright {
