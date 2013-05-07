@@ -1,6 +1,14 @@
 @import "_variables";
 @import "_mixins";
 
+// facebook
+.fb-like-box {
+	width: 100% !important;
+
+	span { max-width: 100% !important; }
+	iframe { max-width: 100% !important; }
+}
+
 /* elements */
 body, select, input, textarea {
 	color: #000;
