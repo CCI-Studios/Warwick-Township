@@ -20,15 +20,17 @@
 
 	.bigger {
 		font-size: 18px;
+		color: white;
 	}
 
 	.smaller {
 		font-size: 14px;
+		color: white;
 	}
 }
 
 .module.socialLink {
-	 
+
 	 .ie8 & {
 		 img {
 		 	min-width: 27px; //bug fix
@@ -77,10 +79,10 @@
 	}
 
 	@include transition(background-position .1s ease-in);
-	
+
 	//for upcoming events with no menu item attached
 	&.templateColor-blue { background-position: -140px 220px; }
-	
+
 	> div {
 		max-width: 960px;
 		padding: 0 10px 7px;
@@ -101,7 +103,7 @@
 
 		@include transition((padding .2s ease-in, font-size .2s ease-in));
 	}
-	
+
 }
 
 // columns
@@ -109,7 +111,7 @@
 ul.category-module {
 	padding: 0;
 	margin: 0;
-	
+
 	li {
 		list-style: none;
 		border-top: 1px solid $underline;
@@ -124,14 +126,14 @@ ul.category-module {
 			background: none;
 			padding-left: 0;
 		}
-		
+
 		h4 {
 			font-weight: bold;
 			margin: 0;
 			padding: 1em 0 0 0;
 			word-wrap: break-word;
 		}
-		
+
 		p {
 			margin: 0;
 		}
