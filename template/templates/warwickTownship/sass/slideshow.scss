@@ -2,8 +2,9 @@
 @import "_mixins";
 
 .module.slideshow {
-	margin: -159px 0 0 0;
+	margin: 0;
 	position: relative;
+	top: -159px;
 
 	@include transition(height .2s ease-in);
 
@@ -45,9 +46,11 @@
 	ul.slideshow {
 		margin: 0;
 		padding: 0;
+		list-style: none;
 
 		li {
 			display: none;
+			text-align: center;
 		}
 
 		li.current {
@@ -66,8 +69,9 @@
 	}
 
 	img {
-		display: block;
 		min-height: 266px;
+		display: block;
+		margin: 0 auto -3px;
 	}
 }
 
