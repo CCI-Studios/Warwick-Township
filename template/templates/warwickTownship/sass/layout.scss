@@ -11,19 +11,25 @@
 
 #headerTop {
 	padding: 10px 0;
-	position: relative;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
 	height: 45px;
-	z-index: 3;
+	z-index: 5;
 }
 
 #menu {
-	position: relative;
+	position: absolute;
+	top: 45px;
+	left: 0;
+	right: 0;
 	font-size: 13px;
 	font-weight: bold;
 	border-top: 1px solid #fff;
 	padding: 0 0 9px 0;
 	background: url("../images/bg_menuShadow.png") bottom center no-repeat;
-	z-index: 3;
+	z-index: 10;
 	clear: both;
 
 	.ie7 & {
@@ -54,10 +60,13 @@
 
 #header {
 	position: relative;
+	padding: 1px 0 0;
 }
 
-#masthead {
+.masthead {
+	margin-top: 125px;
 
+	body.home & { margin-top: 0; }
 }
 
 #main {

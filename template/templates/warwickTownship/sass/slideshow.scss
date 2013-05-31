@@ -4,7 +4,6 @@
 .module.slideshow {
 	margin: 0;
 	position: relative;
-	top: -159px;
 
 	@include transition(height .2s ease-in);
 
