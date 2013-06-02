@@ -31,10 +31,13 @@
 }
 
 #columns {
-	padding-left: 15.957446809%; //150px
-	
+	// padding-left: 15.957446809%; //150px
+	width: 84.042553191%;
+	float: left;
+
 	.home & {
-		padding-left: 15.957446809%; //150px
+		// padding-left: 15.957446809%; //150px
+		width: 84.042553191%;
 	}
 }
 
@@ -42,6 +45,7 @@
 	padding-left: 18.085106383%; //170px
 
 	.home & {
+		float: left;
 		padding-left: 0; //was 150px or 15.957446809%
 		width: 84.042553191%;
 	}

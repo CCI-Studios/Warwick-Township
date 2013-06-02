@@ -74,10 +74,6 @@
 	body.templateColor-blue & { background-position: -140px 220px; }
 	body.templateColor-red & { background-position: -140px 90px; }
 
-	.ie7 & {
-		margin-top: 0;
-	}
-
 	@include transition(background-position .1s ease-in);
 
 	//for upcoming events with no menu item attached

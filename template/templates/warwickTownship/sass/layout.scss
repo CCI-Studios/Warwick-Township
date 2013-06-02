@@ -60,11 +60,12 @@
 
 #header {
 	position: relative;
-	padding: 1px 0 0;
+
+	.home & { padding-top: 0px; }
 }
 
-.masthead {
-	margin-top: 125px;
+.module.masthead {
+	margin-top: 110px;
 
 	body.home & { margin-top: 0; }
 }
@@ -115,6 +116,7 @@
 
 #bottom {
 	width: 100%;
+	float: left;
 	margin: 2em 0 0 0;
 	position: relative;
 	overflow: hidden; //for gallery h3 bottom-border
