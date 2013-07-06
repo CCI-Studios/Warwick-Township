@@ -1,9 +1,10 @@
 /**
- * @depends menu.js
- * @depends columns.js
- * @depends dropmenu.js
- * @depends lettering.js
- * @depends fontsizer.js
- * @depends html5.js
- * @depends script-init.js
+ * @codekit-prepend menu.js
+ * @codekit-prepend columns.js
+ * @codekit-prepend html5.js
+ * @codekit-prepend lettering.js
+ * @codekit-prepend fontsizer.js
+ * @codekit-prepend rollover.js
+ * @codekit-prepend slideshow.js
+ * @codekit-prepend script-init.js
  */

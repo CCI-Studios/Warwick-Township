@@ -1,4 +1,4 @@
-(function (window, document) {
+(function (window) {
 	window.addEvent('domready', function () {
 		$$('ul.slideshow').each(function(slideshow) {
 			var slides = slideshow.getElements('li'),
@@ -26,6 +26,6 @@
 			setTimeout(function() {
 				rotate(slides, next, delay, duration);
 			}, delay);
-		}
+		};
 	});
-}(this, this.document));
+}(this));

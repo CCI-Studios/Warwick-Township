@@ -52,7 +52,6 @@ $color = $this->params->get('templatecolor', 'green');
 	<?php else: ?>
 		<!--[if (gt IE 8) | (IEMobile)]><!-->
 			<link rel="stylesheet" href="/templates/<?= $this->template ?>/css/template.min.css">
-			<link rel="stylesheet" href="/templates/<?= $this->template ?>/css/template-<?php echo $color ?>.css">
 		<!--<![endif]-->
 		<!--[if (lt IE 9) & (!IEMobile)]>
 			<link rel="stylesheet" href="/templates/<?= $this->template ?>/css/template-ie.min.css">
@@ -155,7 +154,6 @@ $color = $this->params->get('templatecolor', 'green');
 	<?php if ($testing): ?>
 		<script src="/templates/<?= $this->template ?>/js/menu.js"></script>
 		<script src="/templates/<?= $this->template ?>/js/columns.js"></script>
-		<script src="/templates/<?= $this->template ?>/js/dropmenu.js"></script>
 		<script src="/templates/<?= $this->template ?>/js/html5.js"></script>
 		<script src="/templates/<?= $this->template ?>/js/lettering.js"></script>
 		<script src="/templates/<?= $this->template ?>/js/fontsizer.js"></script>

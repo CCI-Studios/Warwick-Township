@@ -1,4 +1,4 @@
-(function (window, document) {
+(function (window) {
 	window.addEvent('load', function () {
 		if (Modernizr.input.placeholder) {
 			return;
@@ -21,4 +21,4 @@
 			});
 		});
 	});
-}(this, this.document));
+}(this));
